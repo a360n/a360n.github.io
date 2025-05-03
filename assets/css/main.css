@@ -32,7 +32,31 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+/* Skill Bars */
 
+#skill-levels .skill {
+	margin-bottom: 1.5em;
+  }
+  .skill {
+	margin-bottom: 1.5em;
+}
+  #skill-levels h4 {
+	margin-bottom: 0.3em;
+	font-weight: 600;
+  }
+  .progress-bar {
+	background-color: #e0e0e0;
+	border-radius: 10px;
+	overflow: hidden;
+	height: 20px;
+  }
+  .progress {
+	background-color: var(--primary-color); /* اللون الأساسي */
+	height: 100%;
+	width: 0;
+	transition: width 1s ease-in-out;
+  }
+  
 ol, ul {
 	list-style: none;
 }
