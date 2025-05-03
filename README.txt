@@ -1,51 +1,56 @@
-Ali Nasser's Personal Portfolio Site  
-Based on "Read Only" by HTML5 UP  
-https://a360n.github.io  
-https://html5up.net | @ajlkn
+# Ali Nasser's Personal Portfolio Site
+
+A personalized, single-page responsive website for showcasing my portfolio, projects, and contact information.
+
+**Live Demo:** [https://a360n.github.io](https://a360n.github.io)  
+**Template Base:** [Read Only by HTML5 UP](https://html5up.net) | @ajlkn
 
 ---
 
-📄 Description:
+## Description
 
-This is a customized single-page responsive portfolio website designed for personal branding and showcasing skills, projects, and contact information.  
-It is based on the open-source "Read Only" HTML5 template by HTML5 UP, licensed under the Creative Commons Attribution 3.0 (CCA 3.0) license.
-
----
-
-🎨 Modifications by Ali Nasser:
-
-- Changed color scheme to custom dark blue (`#1e3a8a`)
-- Rewrote all content sections to reflect real-life projects and technical experience
-- Replaced placeholder icons and descriptions
-- Updated contact section and removed unused form functionality
-- Optimized for hosting on GitHub Pages
+This project is a fully customized portfolio website built using the open-source **Read Only** HTML5 template from **HTML5 UP**, licensed under the **Creative Commons Attribution 3.0 (CCA 3.0)** license.
 
 ---
 
-🧾 License:
+##  Modifications by Ali Nasser
 
-This project remains under the Creative Commons Attribution 3.0 license.  
-Original template by HTML5 UP: https://html5up.net/license  
-You are free to use, share, or adapt this project with proper attribution.
-
----
-
-📷 Demo Images Credits:
-
-- Unsplash (https://unsplash.com) – Not included in the actual download.
-
-📦 Libraries and Tools:
-
-- jQuery (https://jquery.com)  
-- Scrollex (https://github.com/ajlkn/jquery.scrollex)  
-- Responsive Tools (https://github.com/ajlkn/responsive-tools)  
-- Font Awesome (https://fontawesome.com)
+- Customized primary color scheme to deep blue `#1e3a8a`
+- Rewrote all content to reflect actual skills, certifications, and technical experience
+- Replaced all placeholder icons and text with real, relevant data
+- Added a "Download CV" section and a certification display section
+- Removed unused form functionality and optimized layout
+- Hosted and deployed using **GitHub Pages**
 
 ---
 
-📧 Contact:
+##  License
 
-Ali Nasser  
-alinasserkhazali@gmail.com  
-GitHub: https://github.com/a360n  
-LinkedIn: https://linkedin.com/in/alinasser
+This project remains under the [Creative Commons Attribution 3.0 License](https://html5up.net/license).  
+Original template by [HTML5 UP](https://html5up.net).
+
+You are free to use, share, and adapt this project with appropriate attribution.
+
+---
+
+##  Demo Image Credits
+
+- Unsplash (https://unsplash.com) — **Note:** demo images not included in the repository.
+
+---
+
+##  Libraries and Tools
+
+- [jQuery](https://jquery.com)  
+- [Scrollex](https://github.com/ajlkn/jquery.scrollex)  
+- [Responsive Tools](https://github.com/ajlkn/responsive-tools)  
+- [Font Awesome](https://fontawesome.com)
+
+---
+
+##  Contact
+
+**Ali Nasser**  
+ alinasserkhazali@gmail.com  
+ [GitHub](https://github.com/a360n)  
+ [LinkedIn](https://linkedin.com/in/alinasser)
