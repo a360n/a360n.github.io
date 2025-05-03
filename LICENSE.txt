@@ -1,0 +1,28 @@
+Creative Commons Attribution 3.0 Unported  
+https://creativecommons.org/licenses/by/3.0/
+
+License Notice:
+
+This website design is originally based on the “Read Only” template by HTML5 UP (https://html5up.net), which is distributed under the Creative Commons Attribution 3.0 license. The original work has been adapted and customized by Ali Nasser to suit personal branding and technical portfolio use.
+
+Attribution:
+
+Original Design by: HTML5 UP  
+Modified by: Ali Nasser (https://a360n.github.io)  
+Modifications include:
+- Custom color scheme
+- Content sections rewritten to reflect real projects and skills
+- Additional personal branding elements
+
+You are free to:
+- Share — copy and redistribute the material in any medium or format
+- Adapt — remix, transform, and build upon the material
+
+Under the following terms:
+- Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+
+DISCLAIMER:
+
+This license does not imply endorsement by the original author (HTML5 UP).  
+This project is provided “AS IS” without warranty of any kind.
+
