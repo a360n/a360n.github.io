@@ -20,7 +20,16 @@
 <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
 <link rel="manifest" href="assets/icons/site.webmanifest">
 
-
+<script>
+	const cvPath = "assets/Ali_Nasser_CV.pdf";
+  
+	document.addEventListener("DOMContentLoaded", () => {
+	  document.querySelectorAll(".cv-download").forEach(el => {
+		el.setAttribute("href", cvPath);
+	  });
+	});
+  </script>
+  
 
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
@@ -33,7 +42,7 @@
 				<h1 id="logo"><a href="#">Ali Nasser</a></h1>
 				<p>iOS Developer & Cybersecurity Student<br />
 				Creating secure and intelligent systems</p>
-				<a href="assets/Ali_Nasser_CV.pdf" class="button primary icon solid fa-download" download style="margin-top: 1rem;">Download CV</a>
+				<a class="button primary icon solid fa-download cv-download" download style="margin-top: 1rem;">Download CV</a>
 			</header>
 			<nav id="nav">
 				<ul>
@@ -256,10 +265,11 @@
   
 	  <ul class="actions">
 		<li>
-		  <a href="assets/Ali_Nasser_CV.pdf" class="button primary" download>
-			<i class="fa fa-download"></i> Download CV
-		  </a>
-		</li>
+			<a class="button primary cv-download" download>
+			  <i class="fa fa-download"></i> Download CV
+			</a>
+		  </li>
+		  
 		<li>
 		  <a href="https://www.linkedin.com/in/ali-nasser-dev/" class="button alt" target="_blank">
 			<i class="fab fa-linkedin"></i> View on LinkedIn
