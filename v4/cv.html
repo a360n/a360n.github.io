@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ali Nasser | Curriculum Vitae • AI Engineer &amp; Cybersecurity Researcher</title>
+  
+  <meta name="description" content="Official Curriculum Vitae of Ali Nasser (علي ناصر) — AI Engineer, Cybersecurity Graduate (University of Babylon), and Quantum Communications Researcher.">
+  <meta name="keywords" content="Ali Nasser CV, Resume, AI Engineer, Cybersecurity, Quantum Communications, Cryptography, iOS Developer, Robotics, IoT, University of Babylon, GDSC Lead">
+  <meta name="author" content="Ali Nasser">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ali-nasser.dev/v4/cv.html">
+  
+  <meta name="theme-color" content="#0071e3">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cv-style.css">
+  
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+  <!-- Ambient Liquid Three.js Canvas & Orbs -->
+  <canvas id="liquid-3d-canvas"></canvas>
+  <div class="liquid-orbs-container">
+    <div class="liquid-orb orb-1"></div>
+    <div class="liquid-orb orb-2"></div>
+    <div class="liquid-orb orb-3"></div>
+  </div>
+
+  <!-- Top Apple VisionOS Floating Header with Back & Download Actions -->
+  <div class="apple-hud-wrapper">
+    <nav class="apple-hud-nav" style="gap: 16px; padding: 10px 22px;">
+      <a href="index.html" class="apple-brand" style="color: var(--accent-apple-blue);">
+        <i class="fas fa-arrow-left"></i>
+        <span>Back to Portfolio</span>
+      </a>
+
+      <div style="height: 20px; width: 1px; background: var(--glass-border);"></div>
+
+      <div class="liquid-chip" style="font-size: 0.8rem; color: #10b981; background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.3);">
+        <i class="fas fa-circle" style="font-size: 0.5rem;"></i> Available for Research &amp; AI Roles
+      </div>
+
+      <div class="apple-actions" style="margin-left: auto;">
+        <button class="apple-btn-icon" id="v4-theme-toggle" aria-label="Toggle Theme">
+          <i class="fas fa-moon" id="v4-theme-icon"></i>
+        </button>
+        <a href="../assets/Ali_Nasser_CV.pdf" download class="btn-liquid btn-liquid-primary" style="padding: 7px 18px; font-size: 0.85rem;">
+          <i class="fas fa-file-download"></i> Download PDF CV
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- CV Hero Section -->
+  <main class="container" style="padding-top: 140px; position: relative; z-index: 2;">
+    
+    <!-- Top Hero Card with Chrome Typography -->
+    <div class="liquid-card" style="padding: 48px; margin-bottom: 28px;">
+      <div class="hero-grid" style="align-items: center;">
+        <div class="hero-content">
+          <div class="liquid-badge" style="margin-bottom: 18px;">
+            <i class="fas fa-id-card-alt"></i> Official Curriculum Vitae
+          </div>
+
+          <h1 class="chrome-title">ALI NASSER</h1>
+          <div class="chrome-subtitle">AI Engineer &amp; Cybersecurity Researcher</div>
+
+          <p class="cv-lead-bio">
+            I engineer intelligent, quantum-resilient systems and secure mobile architectures that blend mathematical cryptography, artificial intelligence, and embedded hardware innovation.
+          </p>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 14px;">
+            <a href="../assets/Ali_Nasser_CV.pdf" download class="btn-liquid btn-liquid-primary">
+              <i class="fas fa-download"></i> Download PDF Version
+            </a>
+            <a href="index.html#quantum-v4" class="btn-liquid btn-liquid-glass">
+              <i class="fas fa-atom"></i> 3D Quantum Simulator
+            </a>
+            <a href="index.html#software-v4" class="btn-liquid btn-liquid-glass">
+              <i class="fas fa-code-branch"></i> Explore Projects
+            </a>
+          </div>
+        </div>
+
+        <!-- VisionOS Hologram Avatar -->
+        <div class="liquid-avatar-container">
+          <div class="liquid-avatar-glass-frame">
+            <img src="../images/avatar.jpeg" alt="Ali Nasser Avatar" class="liquid-avatar-img">
+            <div class="floating-glass-badge badge-top">
+              <i class="fas fa-atom"></i> Quantum Security
+            </div>
+            <div class="floating-glass-badge badge-bottom">
+              <i class="fas fa-brain"></i> AI &amp; Robotics
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Key Metrics & Quote Strip -->
+    <div class="cv-metrics-grid">
+      <div class="metric-glass-box">
+        <i class="fas fa-user-graduate metric-icon"></i>
+        <div>
+          <div class="metric-value">B.Sc.</div>
+          <div class="metric-label">Cybersecurity Degree<br>University of Babylon</div>
+        </div>
+      </div>
+
+      <div class="metric-glass-box">
+        <i class="fas fa-atom metric-icon"></i>
+        <div>
+          <div class="metric-value">QKD</div>
+          <div class="metric-label">Quantum Comms<br>Graduation Thesis</div>
+        </div>
+      </div>
+
+      <div class="metric-glass-box">
+        <i class="fab fa-google metric-icon"></i>
+        <div>
+          <div class="metric-value">GDSC</div>
+          <div class="metric-label">Chapter Lead (23–24)<br>Google for Developers</div>
+        </div>
+      </div>
+
+      <div class="metric-glass-box">
+        <i class="fas fa-shield-alt metric-icon"></i>
+        <div>
+          <div class="metric-value">100%</div>
+          <div class="metric-label">Zero-Trust &amp;<br>Secure Enclave Arch</div>
+        </div>
+      </div>
+
+      <div class="quote-glass-box">
+        <div>"Quantum cryptography cannot be compromised without the fundamental laws of physics being compromised."</div>
+        <div class="quote-author">— Artur Ekert &amp; Gilles Brassard (Quantum Cryptography Pioneers)</div>
+      </div>
+    </div>
+
+    <!-- Featured Career & Research Case Studies -->
+    <div style="margin-bottom: 24px;">
+      <span class="liquid-badge"><i class="fas fa-star"></i> Featured Career &amp; Research Highlights</span>
+    </div>
+
+    <div class="cv-experience-grid">
+      <!-- 01: Quantum Communications -->
+      <div class="cv-exp-card">
+        <div>
+          <span class="card-num-badge">01</span>
+          <div class="card-visual-banner">
+            <i class="fas fa-atom"></i>
+          </div>
+          <h3 class="exp-card-title">Quantum Key Distribution (QKD)</h3>
+          <p class="exp-card-desc">
+            Lead research author for graduation thesis modeling BB84 &amp; Decoy-State QKD protocols, QBER key distillation, and post-quantum encryption resilience against eavesdropping attacks.
+          </p>
+        </div>
+        <div class="exp-tags-row">
+          <span class="exp-tag">BB84</span>
+          <span class="exp-tag">Qiskit</span>
+          <span class="exp-tag">Post-Quantum</span>
+          <span class="exp-tag">Univ. of Babylon</span>
+        </div>
+      </div>
+
+      <!-- 02: AI Engineering & Security Tools -->
+      <div class="cv-exp-card">
+        <div>
+          <span class="card-num-badge">02</span>
+          <div class="card-visual-banner" style="background: linear-gradient(135deg, rgba(14, 165, 233, 0.2), rgba(99, 102, 241, 0.25)); color: #0ea5e9;">
+            <i class="fas fa-terminal"></i>
+          </div>
+          <h3 class="exp-card-title">AI &amp; Pentesting Automation</h3>
+          <p class="exp-card-desc">
+            Engineered automated vulnerability scanning suites (PenTest Hub) and neural threat-hunting agents utilizing Python, Burp Suite API, AsyncIO, and machine learning classifiers.
+          </p>
+        </div>
+        <div class="exp-tags-row">
+          <span class="exp-tag">Python</span>
+          <span class="exp-tag">Burp API</span>
+          <span class="exp-tag">SQLMap</span>
+          <span class="exp-tag">Threat Detection</span>
+        </div>
+      </div>
+
+      <!-- 03: Mobile & Embedded Robotics -->
+      <div class="cv-exp-card">
+        <div>
+          <span class="card-num-badge">03</span>
+          <div class="card-visual-banner" style="background: linear-gradient(135deg, rgba(67, 56, 202, 0.2), rgba(0, 113, 227, 0.25)); color: #6366f1;">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3 class="exp-card-title">iOS &amp; Embedded Systems</h3>
+          <p class="exp-card-desc">
+            Architected hardware-backed AES-256 mobile password managers (Secure Vault with SwiftUI/Face ID) and autonomous STM32/ESP32 sensor rovers with encrypted telemetry.
+          </p>
+        </div>
+        <div class="exp-tags-row">
+          <span class="exp-tag">SwiftUI</span>
+          <span class="exp-tag">CryptoKit</span>
+          <span class="exp-tag">STM32 / ESP32</span>
+          <span class="exp-tag">MQTT TLS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3-Column Matrix: Skills, Tech Stack, & Philosophy -->
+    <div class="cv-tri-matrix">
+      
+      <!-- Column 1: Skills & Expertise -->
+      <div class="matrix-glass-card">
+        <div class="matrix-header">
+          <i class="fas fa-sliders-h"></i> Skills &amp; Expertise
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.86rem; font-weight: 600; margin-bottom: 4px;">
+              <span>Penetration Testing &amp; Network Defense</span>
+              <span style="color: var(--accent-apple-blue);">94%</span>
+            </div>
+            <div class="liquid-progress-bar"><div class="liquid-progress-fill" data-width="94%"></div></div>
+          </div>
+
+          <div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.86rem; font-weight: 600; margin-bottom: 4px;">
+              <span>Applied Cryptography &amp; Quantum Key Distribution</span>
+              <span style="color: var(--accent-apple-blue);">92%</span>
+            </div>
+            <div class="liquid-progress-bar"><div class="liquid-progress-fill" data-width="92%"></div></div>
+          </div>
+
+          <div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.86rem; font-weight: 600; margin-bottom: 4px;">
+              <span>Swift &amp; SwiftUI (iOS Architecture)</span>
+              <span style="color: var(--accent-apple-blue);">90%</span>
+            </div>
+            <div class="liquid-progress-bar"><div class="liquid-progress-fill" data-width="90%"></div></div>
+          </div>
+
+          <div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.86rem; font-weight: 600; margin-bottom: 4px;">
+              <span>AI Engineering &amp; Python Automation</span>
+              <span style="color: var(--accent-apple-blue);">88%</span>
+            </div>
+            <div class="liquid-progress-bar"><div class="liquid-progress-fill" data-width="88%"></div></div>
+          </div>
+
+          <div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.86rem; font-weight: 600; margin-bottom: 4px;">
+              <span>Microcontroller Firmware (STM32/ESP32)</span>
+              <span style="color: var(--accent-apple-blue);">85%</span>
+            </div>
+            <div class="liquid-progress-bar"><div class="liquid-progress-fill" data-width="85%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2: Tech Stack Grid -->
+      <div class="matrix-glass-card">
+        <div class="matrix-header">
+          <i class="fas fa-cubes"></i> Core Tech Stack
+        </div>
+
+        <div class="tech-icon-grid">
+          <div class="tech-tile">
+            <i class="fab fa-python tech-tile-icon" style="color: #3776ab;"></i>
+            <span class="tech-tile-name">Python</span>
+          </div>
+
+          <div class="tech-tile">
+            <i class="fab fa-swift tech-tile-icon" style="color: #f05138;"></i>
+            <span class="tech-tile-name">SwiftUI</span>
+          </div>
+
+          <div class="tech-tile">
+            <i class="fas fa-brain tech-tile-icon" style="color: #ee4c2c;"></i>
+            <span class="tech-tile-name">PyTorch</span>
+          </div>
+
+          <div class="tech-tile">
+            <i class="fas fa-shield-virus tech-tile-icon" style="color: #ff6600;"></i>
+            <span class="tech-tile-name">Burp Suite</span>
+          </div>
+
+          <div class="tech-tile">
+            <i class="fas fa-microchip tech-tile-icon" style="color: #0071e3;"></i>
+            <span class="tech-tile-name">STM32</span>
+          </div>
+
+          <div class="tech-tile">
+            <i class="fas fa-wifi tech-tile-icon" style="color: #e7352f;"></i>
+            <span class="tech-tile-name">ESP32</span>
+          </div>
+
+          <div class="tech-tile">
+            <i class="fas fa-atom tech-tile-icon" style="color: #6929c4;"></i>
+            <span class="tech-tile-name">Qiskit</span>
+          </div>
+
+          <div class="tech-tile">
+            <i class="fab fa-linux tech-tile-icon" style="color: #fcc624;"></i>
+            <span class="tech-tile-name">Linux</span>
+          </div>
+
+          <div class="tech-tile">
+            <i class="fab fa-git-alt tech-tile-icon" style="color: #f05032;"></i>
+            <span class="tech-tile-name">Git CI/CD</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 3: Philosophy & Holographic Crystal -->
+      <div class="matrix-glass-card">
+        <div class="matrix-header">
+          <i class="fas fa-compass"></i> Engineering Philosophy
+        </div>
+
+        <div class="philosophy-sphere-wrapper">
+          <div class="holo-crystal-cube">
+            <div class="holo-crystal-inner">
+              <i class="fas fa-atom"></i>
+            </div>
+          </div>
+
+          <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 6px;">Zero-Trust &amp; Rigorous Foundations</div>
+          <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.6;">
+            Building secure systems starts with zero trust, continuous verification, and mathematical guarantees that withstand future quantum adversaries.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Contact & Connect Banner -->
+    <div class="cv-bottom-banner">
+      <div>
+        <div class="liquid-badge" style="margin-bottom: 12px;"><i class="fas fa-paper-plane"></i> Direct Contact</div>
+        <h2 style="font-size: 1.85rem; font-weight: 800; line-height: 1.2; margin-bottom: 12px;">Let's Build Something Extraordinary</h2>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+          Available for AI engineering, cybersecurity defense consultations, and academic research collaborations.
+        </p>
+        <a href="mailto:alinasserkhazali@gmail.com" class="btn-liquid btn-liquid-primary">
+          <i class="fas fa-envelope"></i> Send Email
+        </a>
+      </div>
+
+      <div>
+        <ul class="contact-info-list">
+          <li class="contact-info-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:alinasserkhazali@gmail.com" style="color: inherit; font-weight: 600;">alinasserkhazali@gmail.com</a>
+          </li>
+          <li class="contact-info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Babylon, Iraq • Available Worldwide (Remote / On-site)</span>
+          </li>
+          <li class="contact-info-item">
+            <i class="fas fa-globe"></i>
+            <span>ali-nasser.dev</span>
+          </li>
+        </ul>
+
+        <div style="display: flex; gap: 8px; margin-top: 18px; flex-wrap: wrap;">
+          <a href="https://orcid.org/0009-0007-6179-8991" target="_blank" rel="noopener noreferrer" class="liquid-chip" style="color: #a6ce39; font-weight: 700;">
+            <i class="fab fa-orcid"></i> ORCID
+          </a>
+          <a href="https://github.com/a360n" target="_blank" rel="noopener noreferrer" class="liquid-chip">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/ali-nasser-dev/" target="_blank" rel="noopener noreferrer" class="liquid-chip">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://www.upwork.com/freelancers/~01744884896a879e7b" target="_blank" rel="noopener noreferrer" class="liquid-chip">
+            <i class="fas fa-briefcase"></i> Upwork
+          </a>
+        </div>
+      </div>
+
+      <div class="qr-card-glass">
+        <div class="qr-code-box">
+          <img src="../assets/icons/android-chrome-192x192.png" alt="Ali Nasser Portfolio QR Logo">
+        </div>
+        <div style="font-size: 0.75rem; font-weight: 700; color: var(--text-primary); margin-top: 4px;">ali-nasser.dev</div>
+        <div style="font-size: 0.68rem; color: var(--text-tertiary);">Scan to view online portfolio</div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="liquid-footer">
+    <div class="container">
+      <div>&copy; 2026 Ali Nasser (علي ناصر) • All rights reserved.</div>
+      <div style="margin-top: 8px; display: flex; justify-content: center; gap: 16px; font-size: 0.85rem;">
+        <a href="index.html">Portfolio Home</a>
+        <span>•</span>
+        <a href="../assets/Ali_Nasser_CV.pdf" download>Download PDF CV</a>
+        <span>•</span>
+        <a href="#">Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="three-scene.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
