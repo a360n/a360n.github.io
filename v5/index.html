@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ali Nasser | 3D Spherical Orbital Portfolio • Apple Liquid Glass</title>
+  
+  <meta name="description" content="Experience Ali Nasser's revolutionary 3D Spherical Orbital portfolio: Quantum Communications, AI Systems, Robotics & Academic Research in Apple VisionOS Liquid Glass.">
+  <meta name="keywords" content="Ali Nasser, علي ناصر, 3D Sphere Web, Apple VisionOS, Liquid Glass, AI Engineer, Cybersecurity, Quantum Communications, Bloch Sphere, Cryptography, iOS Developer, Robotics, IoT, University of Babylon, GDSC Lead">
+  <meta name="author" content="Ali Nasser">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ali-nasser.dev/v5/">
+  
+  <meta name="theme-color" content="#0071e3">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ali Nasser | 3D Spherical Spatial Experience">
+  <meta property="og:description" content="Interactive 3D Spherical Orbit Hub: Quantum Communications, AI Systems, Robotics & Research.">
+  <meta property="og:image" content="https://ali-nasser.dev/images/avatar.jpeg">
+  <meta property="og:url" content="https://ali-nasser.dev/v5/">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+  <!-- Three.js Celestial Background & Liquid Gradient Orbs -->
+  <canvas id="sphere-bg-canvas"></canvas>
+  <div class="sphere-mesh-orbs">
+    <div class="sphere-orb orb-a"></div>
+    <div class="sphere-orb orb-b"></div>
+  </div>
+
+  <!-- Apple VisionOS Dynamic Island HUD Navbar -->
+  <div class="island-nav-wrapper">
+    <nav class="island-nav">
+      <a href="../index.html" class="island-brand">
+        <img src="../images/avatar.jpeg" alt="Ali Nasser" class="island-avatar">
+        <span>Ali Nasser</span>
+        <span class="island-tag">3D SPHERE V5</span>
+      </a>
+
+      <ul class="island-links">
+        <li><button class="island-link active" data-node-index="0">Home</button></li>
+        <li><button class="island-link" data-node-index="1">Quantum 3D</button></li>
+        <li><button class="island-link" data-node-index="2">AI &amp; Code</button></li>
+        <li><button class="island-link" data-node-index="3">Robotics</button></li>
+        <li><button class="island-link" data-node-index="4">Skills</button></li>
+        <li><button class="island-link" data-node-index="5">Honors</button></li>
+        <li><button class="island-link" data-node-index="6">Essays</button></li>
+        <li><button class="island-link" data-node-index="7">Contact</button></li>
+        <li><a href="../v4/index.html" class="island-link" style="opacity: 0.8;"><i class="fab fa-apple"></i> V4 Glass</a></li>
+      </ul>
+
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <button class="island-btn" id="v5-theme-toggle" aria-label="Toggle Theme">
+          <i class="fas fa-moon" id="v5-theme-icon"></i>
+        </button>
+        <a href="../assets/Ali_Nasser_CV.pdf" download class="btn-apple btn-apple-primary" style="padding: 6px 14px; font-size: 0.8rem;">
+          <i class="fas fa-download"></i> CV
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- 3D Spherical Orbit Viewport & Pivot Matrix -->
+  <div class="spatial-viewport" id="spatial-viewport">
+    <div class="sphere-pivot" id="sphere-pivot">
+
+      <!-- NODE 0: Hero & Identity -->
+      <section class="sphere-panel is-active-focus" id="panel-hero">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+          <span class="liquid-chip"><i class="fas fa-globe" style="color: var(--apple-blue);"></i> Spherical Node #1 • Overview</span>
+          <span class="liquid-chip" style="font-size: 0.75rem; color: #10b981;"><i class="fas fa-circle" style="font-size: 0.55rem;"></i> Available for Research</span>
+        </div>
+
+        <h1 style="font-size: clamp(2rem, 3.8vw, 3rem); line-height: 1.15; margin-bottom: 12px;">
+          Ali Nasser — <span class="liquid-title-gradient">AI Engineer &amp; Quantum Researcher</span>
+        </h1>
+
+        <p style="color: var(--text-sub); font-size: 1.05rem; line-height: 1.75; margin-bottom: 24px;">
+          Cybersecurity graduate from the University of Babylon and tech innovator. Specializing in <strong>Quantum Communications (QKD)</strong>, <strong>Machine Learning &amp; AI Security</strong>, <strong>iOS Development</strong>, and autonomous <strong>Robotics &amp; IoT hardware</strong>.
+        </p>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px;">
+          <span class="liquid-chip"><i class="fas fa-atom" style="color: var(--apple-blue);"></i> Quantum Key Distribution</span>
+          <span class="liquid-chip"><i class="fas fa-brain" style="color: var(--apple-cyan);"></i> AI &amp; Threat Detection</span>
+          <span class="liquid-chip"><i class="fab fa-apple"></i> Swift &amp; SwiftUI</span>
+          <span class="liquid-chip"><i class="fas fa-robot"></i> STM32 / ESP32 Robotics</span>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 24px;">
+          <button class="btn-apple btn-apple-primary" onclick="window.rotateToNode(1)">
+            <i class="fas fa-atom"></i> Explore 3D Quantum Lab →
+          </button>
+          <a href="../assets/Ali_Nasser_CV.pdf" download class="btn-apple btn-apple-glass">
+            <i class="fas fa-file-pdf"></i> Download Resume
+          </a>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <a href="https://orcid.org/0009-0007-6179-8991" target="_blank" rel="noopener noreferrer" class="liquid-chip" style="color: #a6ce39; font-weight: 700;">
+            <i class="fab fa-orcid"></i> ORCID
+          </a>
+          <a href="https://github.com/a360n" target="_blank" rel="noopener noreferrer" class="liquid-chip">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/ali-nasser-dev/" target="_blank" rel="noopener noreferrer" class="liquid-chip">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://www.upwork.com/freelancers/~01744884896a879e7b" target="_blank" rel="noopener noreferrer" class="liquid-chip">
+            <i class="fas fa-briefcase"></i> Upwork
+          </a>
+        </div>
+      </section>
+
+      <!-- NODE 1: Quantum Communications & 3D Bloch Sphere -->
+      <section class="sphere-panel" id="panel-quantum">
+        <span class="liquid-chip" style="color: var(--apple-blue); margin-bottom: 12px;"><i class="fas fa-atom"></i> Spherical Node #2 • Research</span>
+        <h2 style="font-size: 1.8rem; margin-bottom: 10px;">Quantum Communications &amp; Cryptography</h2>
+        <p style="color: var(--text-sub); font-size: 0.96rem; line-height: 1.7; margin-bottom: 20px;">
+          Graduation research at University of Babylon on Quantum Key Distribution (QKD), BB84 simulation, and post-quantum cryptographic security.
+        </p>
+
+        <!-- Bloch Canvas Inside Panel -->
+        <div style="background: rgba(0,113,227,0.03); border: 1px solid var(--glass-border); border-radius: var(--radius-md); padding: 18px; margin-bottom: 20px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <span style="font-weight: 700; font-size: 0.9rem;"><i class="fas fa-cube" style="color: var(--apple-blue);"></i> 3D Qubit Bloch Sphere Simulator</span>
+            <span id="v5-qubit-formula" style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--apple-blue);">|ψ⟩ = |0⟩</span>
+          </div>
+          <canvas id="bloch-canvas-v5"></canvas>
+          <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; justify-content: center;">
+            <button class="q-gate-pill" id="v5-gate-zero">|0⟩ Ground</button>
+            <button class="q-gate-pill" id="v5-gate-one">|1⟩ Bit-Flip</button>
+            <button class="q-gate-pill" id="v5-gate-hadamard">H Gate (|+⟩)</button>
+            <button class="q-gate-pill" id="v5-gate-rand">Random</button>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 10px;">
+          <a href="../assets/Ali_Nasser_CV.pdf" download class="btn-apple btn-apple-primary" style="font-size: 0.85rem; padding: 8px 16px;">
+            <i class="fas fa-file-pdf"></i> Download Paper
+          </a>
+          <button class="btn-apple btn-apple-glass open-v5-bibtex" style="font-size: 0.85rem; padding: 8px 16px;">
+            <i class="fas fa-quote-right"></i> Copy BibTeX
+          </button>
+        </div>
+      </section>
+
+      <!-- NODE 2: AI & Software Lab -->
+      <section class="sphere-panel" id="panel-software">
+        <span class="liquid-chip" style="color: var(--apple-blue); margin-bottom: 12px;"><i class="fas fa-code-branch"></i> Spherical Node #3 • Software</span>
+        <h2 style="font-size: 1.8rem; margin-bottom: 16px;">AI &amp; Software Engineering Lab</h2>
+
+        <div style="display: grid; gap: 16px;">
+          <div style="background: rgba(255,255,255,0.4); border: 1px solid var(--glass-border); border-radius: var(--radius-md); padding: 18px;">
+            <h3 style="font-size: 1.25rem; margin-bottom: 6px;"><i class="fas fa-shield-alt" style="color: var(--apple-blue);"></i> Secure Vault (iOS)</h3>
+            <p style="color: var(--text-sub); font-size: 0.92rem; line-height: 1.6; margin-bottom: 10px;">
+              Hardware-backed AES-256 password manager with SwiftUI, Apple CryptoKit, and Biometric Face ID.
+            </p>
+            <span class="liquid-chip" style="font-size: 0.75rem;">SwiftUI</span>
+            <span class="liquid-chip" style="font-size: 0.75rem;">CryptoKit</span>
+            <span class="liquid-chip" style="font-size: 0.75rem;">Core Data</span>
+          </div>
+
+          <div style="background: rgba(255,255,255,0.4); border: 1px solid var(--glass-border); border-radius: var(--radius-md); padding: 18px;">
+            <h3 style="font-size: 1.25rem; margin-bottom: 6px;"><i class="fas fa-terminal" style="color: var(--apple-cyan);"></i> PenTest Hub</h3>
+            <p style="color: var(--text-sub); font-size: 0.92rem; line-height: 1.6; margin-bottom: 10px;">
+              Python vulnerability scanning automation toolkit for SQLi, XSS, and CSRF via Burp Suite API &amp; SQLMap.
+            </p>
+            <span class="liquid-chip" style="font-size: 0.75rem;">Python</span>
+            <span class="liquid-chip" style="font-size: 0.75rem;">Burp API</span>
+            <span class="liquid-chip" style="font-size: 0.75rem;">SQLMap</span>
+          </div>
+
+          <div style="background: rgba(255,255,255,0.4); border: 1px solid var(--glass-border); border-radius: var(--radius-md); padding: 18px;">
+            <h3 style="font-size: 1.25rem; margin-bottom: 6px;"><i class="fas fa-lock" style="color: var(--apple-indigo);"></i> Secure Chat (E2EE)</h3>
+            <p style="color: var(--text-sub); font-size: 0.92rem; line-height: 1.6; margin-bottom: 10px;">
+              End-to-End Encrypted mobile messaging engine using Diffie-Hellman ephemeral keys &amp; Firebase.
+            </p>
+            <span class="liquid-chip" style="font-size: 0.75rem;">SwiftUI</span>
+            <span class="liquid-chip" style="font-size: 0.75rem;">Firebase</span>
+            <span class="liquid-chip" style="font-size: 0.75rem;">CryptoKit</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- NODE 3: Robotics & IoT Maker Hub -->
+      <section class="sphere-panel" id="panel-robotics">
+        <span class="liquid-chip" style="color: var(--apple-blue); margin-bottom: 12px;"><i class="fas fa-robot"></i> Spherical Node #4 • Maker Hub</span>
+        <h2 style="font-size: 1.8rem; margin-bottom: 16px;">Robotics &amp; Cyber-Physical IoT</h2>
+
+        <div style="display: grid; gap: 16px;">
+          <div style="background: rgba(255,255,255,0.4); border: 1px solid var(--glass-border); border-radius: var(--radius-md); padding: 18px;">
+            <h3 style="font-size: 1.25rem; margin-bottom: 6px;">Autonomous Obstacle-Avoidance Rover</h3>
+            <p style="color: var(--text-sub); font-size: 0.92rem; line-height: 1.6;">
+              4WD robotic platform driven by STM32/Arduino, ultrasonic sensor arrays, and PID trajectory control.
+            </p>
+            <div class="schematic-mini">
+              STM32F401: PWM_TIM2 -> Motor Driver | EXTI -> HC-SR04
+            </div>
+            <span class="liquid-chip" style="font-size: 0.75rem;">STM32 / Arduino</span>
+            <span class="liquid-chip" style="font-size: 0.75rem;">Embedded C++</span>
+          </div>
+
+          <div style="background: rgba(255,255,255,0.4); border: 1px solid var(--glass-border); border-radius: var(--radius-md); padding: 18px;">
+            <h3 style="font-size: 1.25rem; margin-bottom: 6px;">Encrypted IoT Telemetry Node</h3>
+            <p style="color: var(--text-sub); font-size: 0.92rem; line-height: 1.6;">
+              Low-power ESP32 sensor node with hardware-accelerated TLS/MQTT encrypted telemetry broadcasting.
+            </p>
+            <div class="schematic-mini">
+              Protocol: MQTT over TLS | Sleep: 15μA Deep Sleep
+            </div>
+            <span class="liquid-chip" style="font-size: 0.75rem;">ESP32</span>
+            <span class="liquid-chip" style="font-size: 0.75rem;">MQTT over TLS</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- NODE 4: Skills Matrix -->
+      <section class="sphere-panel" id="panel-skills">
+        <span class="liquid-chip" style="color: var(--apple-blue); margin-bottom: 12px;"><i class="fas fa-layer-group"></i> Spherical Node #5 • Skills</span>
+        <h2 style="font-size: 1.8rem; margin-bottom: 16px;">Technical Competency Matrix</h2>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px;">
+          <div>
+            <h4 style="color: var(--apple-blue); margin-bottom: 8px;">Cybersecurity</h4>
+            <div style="font-size: 0.85rem;">Nmap, Wireshark, Burp Suite (92%)</div>
+            <div class="progress-pill-track"><div class="progress-pill-fill" data-width="92%"></div></div>
+
+            <div style="font-size: 0.85rem;">Applied Cryptography (94%)</div>
+            <div class="progress-pill-track"><div class="progress-pill-fill" data-width="94%"></div></div>
+          </div>
+
+          <div>
+            <h4 style="color: var(--apple-blue); margin-bottom: 8px;">AI &amp; Python</h4>
+            <div style="font-size: 0.85rem;">Python Automation &amp; APIs (90%)</div>
+            <div class="progress-pill-track"><div class="progress-pill-fill" data-width="90%"></div></div>
+
+            <div style="font-size: 0.85rem;">ML Threat Detection (84%)</div>
+            <div class="progress-pill-track"><div class="progress-pill-fill" data-width="84%"></div></div>
+          </div>
+
+          <div>
+            <h4 style="color: var(--apple-blue); margin-bottom: 8px;">Mobile &amp; Systems</h4>
+            <div style="font-size: 0.85rem;">Swift &amp; SwiftUI (90%)</div>
+            <div class="progress-pill-track"><div class="progress-pill-fill" data-width="90%"></div></div>
+
+            <div style="font-size: 0.85rem;">Core Data &amp; CryptoKit (88%)</div>
+            <div class="progress-pill-track"><div class="progress-pill-fill" data-width="88%"></div></div>
+          </div>
+
+          <div>
+            <h4 style="color: var(--apple-blue); margin-bottom: 8px;">Quantum &amp; Hardware</h4>
+            <div style="font-size: 0.85rem;">QKD Simulation (88%)</div>
+            <div class="progress-pill-track"><div class="progress-pill-fill" data-width="88%"></div></div>
+
+            <div style="font-size: 0.85rem;">ESP32 / STM32 IoT (84%)</div>
+            <div class="progress-pill-track"><div class="progress-pill-fill" data-width="84%"></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NODE 5: Milestones & GDSC Honors -->
+      <section class="sphere-panel" id="panel-milestones">
+        <span class="liquid-chip" style="color: var(--apple-blue); margin-bottom: 12px;"><i class="fas fa-medal"></i> Spherical Node #6 • Honors</span>
+        <h2 style="font-size: 1.8rem; margin-bottom: 16px;">Honors &amp; Milestones</h2>
+
+        <div style="display: flex; gap: 20px; align-items: center; margin-bottom: 20px; flex-wrap: wrap;">
+          <img src="../images/gdsc-certificate.png" alt="GDSC Certificate" style="width: 180px; border-radius: var(--radius-md); border: 1.5px solid var(--glass-border); box-shadow: var(--shadow-spatial);">
+          <div style="flex: 1; min-width: 240px;">
+            <span class="liquid-chip" style="color: var(--apple-blue); margin-bottom: 6px;">Google for Developers</span>
+            <h3 style="font-size: 1.3rem; margin-bottom: 8px;">GDSC Lead (2023–2024)</h3>
+            <p style="color: var(--text-sub); font-size: 0.92rem; line-height: 1.6; margin-bottom: 12px;">
+              Google Developer Student Club Lead at University of Babylon. Trained 500+ student developers in mobile, security, and cloud tech.
+            </p>
+            <a href="https://www.credential.net/1obas9QFO3YJywkpODBXOfcLTOO7qZCGrWySneR2auKo" target="_blank" rel="noopener noreferrer" class="btn-apple btn-apple-primary" style="font-size: 0.82rem; padding: 6px 14px;">
+              <i class="fas fa-check-circle"></i> Verify Credential
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- NODE 6: Essays & Digital Garden -->
+      <section class="sphere-panel" id="panel-essays">
+        <span class="liquid-chip" style="color: var(--apple-blue); margin-bottom: 12px;"><i class="fas fa-pen-nib"></i> Spherical Node #7 • Articles</span>
+        <h2 style="font-size: 1.8rem; margin-bottom: 16px;">Essays &amp; Digital Garden</h2>
+
+        <div style="display: grid; gap: 14px;">
+          <div style="background: rgba(255,255,255,0.4); border: 1px solid var(--glass-border); border-radius: var(--radius-md); padding: 16px;">
+            <span style="font-size: 0.78rem; color: var(--apple-blue); font-family: var(--font-mono);">6 min read • Quantum Cryptography</span>
+            <h3 style="font-size: 1.15rem; margin: 4px 0 6px;">The Post-Quantum Era: Migrating Beyond RSA &amp; ECC</h3>
+            <p style="color: var(--text-sub); font-size: 0.88rem; line-height: 1.5;">
+              Analyzing Shor's algorithm threats and implementing lattice-based cryptography standards.
+            </p>
+          </div>
+
+          <div style="background: rgba(255,255,255,0.4); border: 1px solid var(--glass-border); border-radius: var(--radius-md); padding: 16px;">
+            <span style="font-size: 0.78rem; color: var(--apple-blue); font-family: var(--font-mono);">5 min read • iOS Security</span>
+            <h3 style="font-size: 1.15rem; margin: 4px 0 6px;">Zero-Trust Architectures in Modern iOS Applications</h3>
+            <p style="color: var(--text-sub); font-size: 0.88rem; line-height: 1.5;">
+              Designing iOS apps with hardware-backed Secure Enclave keys and biometric entitlements.
+            </p>
+          </div>
+
+          <div style="background: rgba(255,255,255,0.4); border: 1px solid var(--glass-border); border-radius: var(--radius-md); padding: 16px;">
+            <span style="font-size: 0.78rem; color: var(--apple-blue); font-family: var(--font-mono);">8 min read • AI Defense</span>
+            <h3 style="font-size: 1.15rem; margin: 4px 0 6px;">Autonomous AI Agents in Real-Time Incident Response</h3>
+            <p style="color: var(--text-sub); font-size: 0.88rem; line-height: 1.5;">
+              Multi-agent LLM pipelines for automated zero-day containment and network isolation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- NODE 7: Contact Terminal -->
+      <section class="sphere-panel" id="panel-contact">
+        <span class="liquid-chip" style="color: var(--apple-blue); margin-bottom: 12px;"><i class="fas fa-envelope-open-text"></i> Spherical Node #8 • Connect</span>
+        <h2 style="font-size: 2rem; margin-bottom: 12px;">Let's Collaborate</h2>
+        <p style="color: var(--text-sub); font-size: 1rem; line-height: 1.7; margin-bottom: 24px;">
+          Open for academic research partnerships in quantum communications, AI engineering, and software consultations.
+        </p>
+
+        <a href="mailto:alinasserkhazali@gmail.com" class="btn-apple btn-apple-primary" style="font-size: 1rem; padding: 12px 28px; margin-bottom: 24px; display: inline-flex;">
+          <i class="fas fa-envelope"></i> Send Email: alinasserkhazali@gmail.com
+        </a>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+          <a href="https://orcid.org/0009-0007-6179-8991" target="_blank" rel="noopener noreferrer" class="liquid-chip" style="color: #a6ce39; font-weight: 700;">
+            <i class="fab fa-orcid"></i> ORCID (0009-0007-6179-8991)
+          </a>
+          <a href="https://www.linkedin.com/in/ali-nasser-dev/" target="_blank" rel="noopener noreferrer" class="liquid-chip">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/a360n" target="_blank" rel="noopener noreferrer" class="liquid-chip">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://www.upwork.com/freelancers/~01744884896a879e7b" target="_blank" rel="noopener noreferrer" class="liquid-chip">
+            <i class="fas fa-briefcase"></i> Upwork
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- 3D Orbit Radar Hub at Bottom -->
+  <div class="orbit-radar-hub">
+    <button class="orbit-arrow-btn" id="orbit-prev-btn" aria-label="Previous Node"><i class="fas fa-chevron-left"></i></button>
+
+    <div class="radar-dots-track">
+      <div class="radar-dot active" data-index="0" title="Home"></div>
+      <div class="radar-dot" data-index="1" title="Quantum"></div>
+      <div class="radar-dot" data-index="2" title="AI & Software"></div>
+      <div class="radar-dot" data-index="3" title="Robotics"></div>
+      <div class="radar-dot" data-index="4" title="Skills"></div>
+      <div class="radar-dot" data-index="5" title="Honors"></div>
+      <div class="radar-dot" data-index="6" title="Essays"></div>
+      <div class="radar-dot" data-index="7" title="Contact"></div>
+    </div>
+
+    <button class="orbit-arrow-btn" id="orbit-next-btn" aria-label="Next Node"><i class="fas fa-chevron-right"></i></button>
+
+    <div class="drag-hint-badge">
+      <i class="fas fa-hand-pointer"></i> <span>Drag or swipe to rotate sphere</span>
+    </div>
+  </div>
+
+  <!-- BibTeX Modal -->
+  <div class="modal-backdrop" id="v5-bibtex-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.65); backdrop-filter: blur(20px); z-index: 9999; align-items: center; justify-content: center; padding: 20px;">
+    <div class="sphere-panel" style="position: relative; max-width: 600px; padding: 30px; margin: 0; max-height: 80vh;">
+      <button id="close-v5-bibtex" style="position: absolute; top: 16px; right: 16px; background: none; border: none; font-size: 1.4rem; color: var(--text-dim); cursor: pointer;">&times;</button>
+      <h3 style="font-size: 1.3rem; margin-bottom: 12px;"><i class="fas fa-quote-right" style="color: var(--apple-blue);"></i> BibTeX Citation</h3>
+      
+      <div style="background: rgba(0,113,227,0.06); padding: 16px; border-radius: var(--radius-sm); font-family: var(--font-mono); font-size: 0.85rem; white-space: pre-wrap; margin: 16px 0;" id="v5-bibtex-text">@mastersthesis{nasser2025quantum,
+  author    = {Ali Nasser},
+  title     = {Simulation and Security Analysis of Quantum Key Distribution (QKD) Protocols},
+  school    = {University of Babylon},
+  year      = {2025},
+  note      = {Department of Cybersecurity},
+  url       = {https://ali-nasser.dev/v5/}
+}</div>
+
+      <button class="btn-apple btn-apple-primary" id="copy-v5-bibtex">
+        <i class="fas fa-copy"></i> Copy BibTeX
+      </button>
+    </div>
+  </div>
+
+  <script src="sphere-engine.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
