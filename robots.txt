@@ -26,6 +26,6 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-Sitemap: https://ali-nasser.dev/sitemap.xml
+Sitemap: https://www.ali-nasser.dev/sitemap.xml
 # Semantic AI Manifest
-# https://ali-nasser.dev/llms.txt
+# https://www.ali-nasser.dev/llms.txt

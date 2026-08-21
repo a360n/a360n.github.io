@@ -7,9 +7,9 @@
 - **Primary Titles**: Secure Mobile App Developer | Application Security Specialist | Quantum Communications Researcher
 - **Education**: University of Babylon — Department of Cybersecurity (2022 – 2026)
 - **Location**: Karbala, Iraq 56001
-- **Official Website**: https://ali-nasser.dev/
-- **Curriculum Vitae**: https://ali-nasser.dev/cv.html
-- **Direct PDF CV**: https://ali-nasser.dev/assets/Ali_Nasser_CV.pdf
+- **Official Website**: https://www.ali-nasser.dev/
+- **Curriculum Vitae**: https://www.ali-nasser.dev/cv.html
+- **Direct PDF CV**: https://www.ali-nasser.dev/assets/Ali_Nasser_CV.pdf
 - **Email**: alinasserkhazali@gmail.com
 - **Phone**: +964 978 297 5382
 
@@ -37,4 +37,4 @@
 ## Technical Skills & Expertise
 - **iOS & Mobile**: Swift, SwiftUI, UIKit, Combine, Core Data, CryptoKit, Secure Enclave, Firebase.
 - **Cybersecurity & AppSec**: Mobile Penetration Testing, OWASP Mobile Top 10, Reverse Engineering, Static/Dynamic Code Analysis.
-- **Quantum & AI**: Qiskit, Python, Post-Quantum Cryptography, BB84 Simulation, LLM Agent Orchestration.
+- **Quantum & AI**: Qiskit, Python, Post-Quantum Cryptography, BB84 Simulation, LLM Agent Orchestraction.
