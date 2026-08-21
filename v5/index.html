@@ -44,36 +44,17 @@
     <div class="sphere-orb orb-b"></div>
   </div>
 
-  <!-- Apple VisionOS Dynamic Island HUD Navbar -->
-  <div class="island-nav-wrapper">
-    <nav class="island-nav">
-      <a href="../index.html" class="island-brand">
-        <img src="../images/avatar.jpeg" alt="Ali Nasser" class="island-avatar">
-        <span>Ali Nasser</span>
-        <span class="island-tag">3D SPHERE V5</span>
-      </a>
-
-      <ul class="island-links">
-        <li><button class="island-link active" data-node-index="0">Home</button></li>
-        <li><button class="island-link" data-node-index="1">Quantum 3D</button></li>
-        <li><button class="island-link" data-node-index="2">AI &amp; Code</button></li>
-        <li><button class="island-link" data-node-index="3">Robotics</button></li>
-        <li><button class="island-link" data-node-index="4">Skills</button></li>
-        <li><button class="island-link" data-node-index="5">Honors</button></li>
-        <li><button class="island-link" data-node-index="6">Essays</button></li>
-        <li><button class="island-link" data-node-index="7">Contact</button></li>
-        <li><a href="../v4/index.html" class="island-link" style="opacity: 0.8;"><i class="fab fa-apple"></i> V4 Glass</a></li>
-      </ul>
-
-      <div style="display: flex; align-items: center; gap: 8px;">
-        <button class="island-btn" id="v5-theme-toggle" aria-label="Toggle Theme">
-          <i class="fas fa-moon" id="v5-theme-icon"></i>
-        </button>
-        <a href="../assets/Ali_Nasser_CV.pdf" download class="btn-apple btn-apple-primary" style="padding: 6px 14px; font-size: 0.8rem;">
-          <i class="fas fa-download"></i> CV
-        </a>
-      </div>
-    </nav>
+  <!-- Floating Corner Action Controls (Minimalist, No top bar) -->
+  <div class="floating-corner-controls">
+    <button class="corner-btn" id="v5-theme-toggle" aria-label="Toggle Theme">
+      <i class="fas fa-moon" id="v5-theme-icon"></i>
+    </button>
+    <a href="../assets/Ali_Nasser_CV.pdf" download class="corner-btn btn-apple-primary" style="color: #fff !important;">
+      <i class="fas fa-download"></i> Download CV
+    </a>
+    <a href="../v4/index.html" class="corner-btn">
+      <i class="fab fa-apple"></i> V4 Glass
+    </a>
   </div>
 
   <!-- 3D Spherical Orbit Viewport & Pivot Matrix -->

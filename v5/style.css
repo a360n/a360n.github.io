@@ -159,18 +159,23 @@ html, body {
    3D Spherical World Viewport
    ========================================================================== */
 
+/* ==========================================================================
+   3D Spherical World Viewport & Pivot (Spatial Camera Distance)
+   ========================================================================== */
+
 .spatial-viewport {
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  perspective: 1400px;
+  perspective: 2000px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: grab;
   z-index: 5;
+  overflow: hidden;
 }
 
 .spatial-viewport:active {
@@ -183,7 +188,7 @@ html, body {
   width: 0;
   height: 0;
   transform-style: preserve-3d;
-  transition: transform 0.1s ease-out;
+  transition: transform 0.08s ease-out;
 }
 
 /* Individual Spherical Node Panel */
@@ -191,30 +196,32 @@ html, body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: min(820px, 88vw);
-  max-height: 78vh;
-  margin-top: -39vh;
-  margin-left: calc(min(820px, 88vw) / -2);
+  width: min(720px, 86vw);
+  max-height: 74vh;
+  margin-top: -37vh;
+  margin-left: calc(min(720px, 86vw) / -2);
   
   background: var(--glass-bg);
   backdrop-filter: blur(35px) saturate(180%);
   -webkit-backdrop-filter: blur(35px) saturate(180%);
   border: 1.5px solid var(--glass-border);
   border-radius: var(--radius-xl);
-  padding: 40px;
+  padding: 34px 38px;
   box-shadow: var(--shadow-spatial);
   
   overflow-y: auto;
   overflow-x: hidden;
   user-select: auto;
   -webkit-user-select: auto;
-  pointer-events: auto;
   
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   transform-style: preserve-3d;
   
-  transition: box-shadow 0.3s ease, border-color 0.3s ease, opacity 0.4s ease;
+  opacity: 0.35;
+  filter: blur(2px) scale(0.92);
+  pointer-events: none;
+  transition: box-shadow 0.4s ease, border-color 0.4s ease, opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .sphere-panel::before {
@@ -227,7 +234,7 @@ html, body {
   background: var(--grad-glass-sheen);
   pointer-events: none;
   display: block;
-  margin-top: -40px;
+  margin-top: -34px;
   margin-bottom: 20px;
 }
 
@@ -243,8 +250,47 @@ html, body {
 }
 
 .sphere-panel.is-active-focus {
+  opacity: 1;
+  filter: blur(0px) scale(1);
+  pointer-events: auto;
   border-color: var(--glass-border-glow);
   box-shadow: var(--shadow-spatial-active);
+}
+
+/* Floating Corner Action Controls (Minimalist, No intrusive top bar) */
+.floating-corner-controls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.corner-btn {
+  background: var(--glass-bg-focus);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  color: var(--text-main);
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-spatial);
+  transition: all 0.2s ease;
+}
+
+.corner-btn:hover {
+  transform: scale(1.05);
+  border-color: var(--apple-blue);
+  color: var(--apple-blue);
 }
 
 /* ==========================================================================

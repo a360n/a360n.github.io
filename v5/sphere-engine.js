@@ -17,7 +17,7 @@
   let velocityY = 0;
 
   let activeIndex = 0;
-  const sphereRadius = 920; // 3D Spherical radius in pixels
+  const sphereRadius = 1020; // 3D Spherical radius in pixels
 
   // 8 Spherical Nodes Configuration (Longitude & Latitude in degrees)
   const nodesConfig = [
@@ -63,8 +63,8 @@
     if (!viewport || !pivot) return;
 
     viewport.addEventListener('mousedown', (e) => {
-      // Don't drag if clicking buttons, links, or canvas
-      if (e.target.closest('button, a, input, canvas, .schematic-mini, .sphere-panel')) return;
+      // Don't drag if clicking buttons, links, or interactive inputs
+      if (e.target.closest('button, a, input, canvas, .schematic-mini, .q-gate-pill')) return;
       isDragging = true;
       prevMouseX = e.clientX;
       prevMouseY = e.clientY;
@@ -81,14 +81,14 @@
       const deltaX = e.clientX - prevMouseX;
       const deltaY = e.clientY - prevMouseY;
 
-      velocityX = deltaX * 0.25;
-      velocityY = deltaY * 0.15;
+      velocityX = deltaX * 0.22;
+      velocityY = deltaY * 0.12;
 
       targetRotationY += velocityX;
       targetRotationX -= velocityY;
 
       // Clamp vertical tilt to prevent flipping
-      targetRotationX = Math.max(-25, Math.min(25, targetRotationX));
+      targetRotationX = Math.max(-20, Math.min(20, targetRotationX));
 
       prevMouseX = e.clientX;
       prevMouseY = e.clientY;
@@ -96,7 +96,7 @@
 
     // Touch Support
     viewport.addEventListener('touchstart', (e) => {
-      if (e.target.closest('button, a, input, canvas, .sphere-panel')) return;
+      if (e.target.closest('button, a, input, canvas, .schematic-mini, .q-gate-pill')) return;
       if (e.touches.length === 1) {
         isDragging = true;
         prevMouseX = e.touches[0].clientX;
@@ -109,9 +109,9 @@
       const deltaX = e.touches[0].clientX - prevMouseX;
       const deltaY = e.touches[0].clientY - prevMouseY;
 
-      targetRotationY += deltaX * 0.25;
-      targetRotationX -= deltaY * 0.15;
-      targetRotationX = Math.max(-25, Math.min(25, targetRotationX));
+      targetRotationY += deltaX * 0.22;
+      targetRotationX -= deltaY * 0.12;
+      targetRotationX = Math.max(-20, Math.min(20, targetRotationX));
 
       prevMouseX = e.touches[0].clientX;
       prevMouseY = e.touches[0].clientY;
@@ -132,7 +132,8 @@
       currentRotationY += (targetRotationY - currentRotationY) * 0.1;
       currentRotationX += (targetRotationX - currentRotationX) * 0.1;
 
-      pivot.style.transform = `rotateX(${currentRotationX}deg) rotateY(${-currentRotationY}deg)`;
+      // Camera distance pushed back in Z space to view the beautiful 3D sphere curvature
+      pivot.style.transform = `translateZ(-480px) rotateX(${currentRotationX}deg) rotateY(${-currentRotationY}deg)`;
     }
     renderPhysics();
   }
