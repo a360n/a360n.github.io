@@ -438,8 +438,83 @@
 
 @media (max-width: 768px) {
   main.container {
-    padding-top: 110px !important;
+    padding-top: 100px !important;
   }
+
+  /* Separate Floating Liquid Glass Buttons on Mobile */
+  .cv-hud-wrapper {
+    top: 14px;
+    padding: 0 14px;
+    pointer-events: none;
+  }
+
+  .cv-hud-nav {
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+
+  .cv-back-btn {
+    pointer-events: auto;
+    background: var(--glass-surface-elevated);
+    backdrop-filter: blur(25px) saturate(180%);
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    border-radius: var(--radius-pill);
+    padding: 9px 16px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: all 0.25s ease;
+  }
+
+  .cv-back-btn:active {
+    transform: scale(0.95);
+  }
+
+  .cv-hud-actions {
+    pointer-events: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+  }
+
+  .cv-hud-actions .apple-btn-icon {
+    background: var(--glass-surface-elevated);
+    backdrop-filter: blur(25px) saturate(180%);
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+    box-shadow: var(--glass-shadow);
+    border: 1px solid var(--glass-border);
+    width: 38px;
+    height: 38px;
+  }
+
+  .cv-download-btn {
+    background: var(--grad-liquid-primary);
+    box-shadow: 0 8px 24px -4px rgba(0, 113, 227, 0.45);
+    border-radius: var(--radius-pill);
+    padding: 8px 16px !important;
+    font-size: 0.85rem !important;
+    font-weight: 700;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+  }
+
   .chrome-title {
     font-size: clamp(2.3rem, 9vw, 3.4rem);
     letter-spacing: -0.02em;
@@ -455,5 +530,25 @@
   }
   .qr-card-glass {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .cv-back-btn span {
+    display: none;
+  }
+  .cv-back-btn {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .cv-download-btn span {
+    display: none;
+  }
+  .cv-download-btn::after {
+    content: 'PDF CV';
+    font-weight: 700;
   }
 }
