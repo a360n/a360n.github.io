@@ -429,8 +429,31 @@
   .cv-bottom-banner {
     grid-template-columns: 1fr;
     text-align: center;
+    gap: 28px;
   }
   .contact-info-list {
     align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  main.container {
+    padding-top: 110px !important;
+  }
+  .chrome-title {
+    font-size: clamp(2.3rem, 9vw, 3.4rem);
+    letter-spacing: -0.02em;
+  }
+  .chrome-subtitle {
+    font-size: 0.95rem;
+  }
+  .cv-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+  .quote-glass-box {
+    grid-column: span 1;
+  }
+  .qr-card-glass {
+    margin: 0 auto;
   }
 }

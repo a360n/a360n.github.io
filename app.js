@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initBibtexModalV4();
   initAppleAudio();
   initAppleScrollSpy();
+  initMobileMenu();
 });
 
 /* ==========================================================================
@@ -177,7 +178,8 @@ function initAppleAudio() {
    ========================================================================== */
 function initAppleScrollSpy() {
   const navLinks = document.querySelectorAll('.apple-links .apple-link');
-  if (!navLinks.length) return;
+  const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+  if (!navLinks.length && !mobileLinks.length) return;
 
   const sectionMap = [];
   navLinks.forEach(link => {
@@ -196,9 +198,17 @@ function initAppleScrollSpy() {
 
   if (!sectionMap.length) return;
 
-  function setActive(activeLink) {
+  function setActive(activeId) {
     navLinks.forEach(link => {
-      if (link === activeLink) {
+      if (link.getAttribute('href') === activeId) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+
+    mobileLinks.forEach(link => {
+      if (link.getAttribute('href') === activeId) {
         link.classList.add('active');
       } else {
         link.classList.remove('active');
@@ -213,33 +223,33 @@ function initAppleScrollSpy() {
 
     // Edge case 1: Top of page
     if (scrollY < 120) {
-      setActive(sectionMap[0].link);
+      setActive(sectionMap[0].id);
       return;
     }
 
     // Edge case 2: Near bottom of page (highlight Contact)
     if (scrollY + windowHeight >= documentHeight - 60) {
-      setActive(sectionMap[sectionMap.length - 1].link);
+      setActive(sectionMap[sectionMap.length - 1].id);
       return;
     }
 
     // Scroll offset check with HUD breathing space
     const navbarOffset = 220;
-    let currentActive = sectionMap[0].link;
+    let currentActiveId = sectionMap[0].id;
 
     for (let i = 0; i < sectionMap.length; i++) {
-      const { section, link } = sectionMap[i];
+      const { section, id } = sectionMap[i];
       const top = section.offsetTop - navbarOffset;
 
       if (scrollY >= top) {
-        currentActive = link;
+        currentActiveId = id;
       }
     }
 
-    setActive(currentActive);
+    setActive(currentActiveId);
   }
 
-  // Smooth scroll and immediate active state on click
+  // Smooth scroll and immediate active state on desktop clicks
   navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       const href = link.getAttribute('href');
@@ -247,7 +257,7 @@ function initAppleScrollSpy() {
         const target = document.querySelector(href);
         if (target) {
           e.preventDefault();
-          setActive(link);
+          setActive(href);
           const top = target.offsetTop - 85;
           window.scrollTo({
             top: Math.max(0, top),
@@ -266,7 +276,7 @@ function initAppleScrollSpy() {
   if (brandLink) {
     brandLink.addEventListener('click', (e) => {
       e.preventDefault();
-      setActive(sectionMap[0].link);
+      setActive('#hero-v4');
       window.scrollTo({ top: 0, behavior: 'smooth' });
       if (history.pushState) {
         history.pushState(null, null, '#hero-v4');
@@ -288,4 +298,84 @@ function initAppleScrollSpy() {
 
   window.addEventListener('resize', updateActiveLink);
   updateActiveLink();
+}
+
+/* ==========================================================================
+   7. Apple VisionOS Liquid Glass Mobile Drawer Interactions
+   ========================================================================== */
+function initMobileMenu() {
+  const toggleBtn = document.getElementById('apple-mobile-toggle');
+  const toggleIcon = document.getElementById('mobile-toggle-icon');
+  const menu = document.getElementById('apple-mobile-menu');
+  const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+  if (!toggleBtn || !menu) return;
+
+  function openMenu() {
+    menu.classList.add('active');
+    if (toggleIcon) {
+      toggleIcon.className = 'fas fa-times';
+    }
+  }
+
+  function closeMenu() {
+    menu.classList.remove('active');
+    if (toggleIcon) {
+      toggleIcon.className = 'fas fa-bars';
+    }
+  }
+
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (menu.classList.contains('active')) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  // Smooth scroll and auto-close drawer on link click
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          closeMenu();
+          const top = target.offsetTop - 75;
+          setTimeout(() => {
+            window.scrollTo({
+              top: Math.max(0, top),
+              behavior: 'smooth'
+            });
+          }, 150);
+          if (history.pushState) {
+            history.pushState(null, null, href);
+          }
+        }
+      }
+    });
+  });
+
+  // Close when clicking outside
+  document.addEventListener('click', (e) => {
+    if (menu.classList.contains('active') && !menu.contains(e.target) && !toggleBtn.contains(e.target)) {
+      closeMenu();
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && menu.classList.contains('active')) {
+      closeMenu();
+    }
+  });
+
+  // Auto-close if resized to desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 992 && menu.classList.contains('active')) {
+      closeMenu();
+    }
+  });
 }
