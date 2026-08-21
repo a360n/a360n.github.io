@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ali Nasser | Curriculum Vitae • Secure Mobile App Developer &amp; AppSec Specialist</title>
+  
+  <meta name="description" content="Official Curriculum Vitae of Ali Nasser (علي ناصر) — Secure Mobile App Developer, Application Security Specialist, and Secure iOS Developer (University of Babylon).">
+  <meta name="keywords" content="Ali Nasser CV, Resume, Secure Mobile App Developer, Application Security Specialist, Secure iOS Developer, University of Babylon, GDSC Lead, Swift, SwiftUI, PenTest Hub, iOS Security Scanner, Secure Vault">
+  <meta name="author" content="Ali Nasser">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ali-nasser.dev/cv.html">
+  
+  <meta name="theme-color" content="#0071e3">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cv-style.css">
+  
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+  <!-- Ambient Liquid Three.js Canvas & Orbs -->
+  <canvas id="liquid-3d-canvas"></canvas>
+  <div class="liquid-orbs-container">
+    <div class="liquid-orb orb-1"></div>
+    <div class="liquid-orb orb-2"></div>
+    <div class="liquid-orb orb-3"></div>
+  </div>
+
+  <!-- Top Apple VisionOS Floating Header with Back & Download Actions -->
+  <div class="apple-hud-wrapper">
+    <nav class="apple-hud-nav" style="gap: 16px; padding: 10px 22px;">
+      <a href="index.html" class="apple-brand" style="color: var(--accent-apple-blue);">
+        <i class="fas fa-arrow-left"></i>
+        <span>Back to Portfolio</span>
+      </a>
+
+      <div style="height: 20px; width: 1px; background: var(--glass-border);"></div>
+
+      <div class="liquid-chip" style="font-size: 0.8rem; color: #10b981; background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.3);">
+        <i class="fas fa-circle" style="font-size: 0.5rem;"></i> Available for Secure iOS &amp; AppSec Roles
+      </div>
+
+      <div class="apple-actions" style="margin-left: auto;">
+        <button class="apple-btn-icon" id="v4-theme-toggle" aria-label="Toggle Theme">
+          <i class="fas fa-moon" id="v4-theme-icon"></i>
+        </button>
+        <a href="assets/Ali_Nasser_CV.pdf" download class="btn-liquid btn-liquid-primary" style="padding: 7px 18px; font-size: 0.85rem;">
+          <i class="fas fa-file-download"></i> Download PDF CV
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- CV Main Container -->
+  <main class="container" style="padding-top: 140px; position: relative; z-index: 2;">
+    
+    <!-- Top Hero Card with Chrome Typography & Exact CV Profile -->
+    <div class="liquid-card" style="padding: 48px; margin-bottom: 28px;">
+      <div class="hero-grid" style="align-items: center;">
+        <div class="hero-content">
+          <div class="liquid-badge" style="margin-bottom: 18px;">
+            <i class="fas fa-id-card-alt"></i> Official Curriculum Vitae
+          </div>
+
+          <h1 class="chrome-title">ALI NASSER</h1>
+          <div class="chrome-subtitle">
+            Secure Mobile App Developer &nbsp;|&nbsp; Application Security Specialist &nbsp;|&nbsp; Secure iOS Developer
+          </div>
+
+          <div style="margin-bottom: 12px; font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-apple-blue);">
+            <i class="fas fa-user-circle"></i> Profile
+          </div>
+          <p class="cv-lead-bio">
+            I'm a Secure Mobile App Developer and Application Security Specialist with a deep focus on iOS development. I build mobile applications that not only function beautifully, but are hardened against modern security threats.
+          </p>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 14px;">
+            <a href="assets/Ali_Nasser_CV.pdf" download class="btn-liquid btn-liquid-primary">
+              <i class="fas fa-download"></i> Download PDF Version
+            </a>
+            <a href="mailto:alinasserkhazali@gmail.com" class="btn-liquid btn-liquid-glass">
+              <i class="fas fa-envelope"></i> Contact Me
+            </a>
+            <a href="index.html" class="btn-liquid btn-liquid-glass">
+              <i class="fas fa-globe"></i> Interactive 3D Hub
+            </a>
+          </div>
+        </div>
+
+        <!-- VisionOS Hologram Avatar -->
+        <div class="liquid-avatar-container">
+          <div class="liquid-avatar-glass-frame">
+            <img src="images/avatar.jpeg" alt="Ali Nasser Avatar" class="liquid-avatar-img">
+            <div class="floating-glass-badge badge-top">
+              <i class="fab fa-apple"></i> Secure iOS Dev
+            </div>
+            <div class="floating-glass-badge badge-bottom">
+              <i class="fas fa-shield-alt"></i> AppSec Specialist
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Key Metrics & Profile Philosophy Strip -->
+    <div class="cv-metrics-grid">
+      <div class="metric-glass-box">
+        <i class="fas fa-user-graduate metric-icon"></i>
+        <div>
+          <div class="metric-value">B.Sc.</div>
+          <div class="metric-label">Cybersecurity (2022–2026)<br>University of Babylon</div>
+        </div>
+      </div>
+
+      <div class="metric-glass-box">
+        <i class="fab fa-google metric-icon"></i>
+        <div>
+          <div class="metric-value">GDSC</div>
+          <div class="metric-label">Chapter Lead (2023–2024)<br>Google for Developers</div>
+        </div>
+      </div>
+
+      <div class="metric-glass-box">
+        <i class="fas fa-lock metric-icon"></i>
+        <div>
+          <div class="metric-value">AES-256</div>
+          <div class="metric-label">Hardened Encryption &amp;<br>CryptoKit Integration</div>
+        </div>
+      </div>
+
+      <div class="metric-glass-box">
+        <i class="fas fa-terminal metric-icon"></i>
+        <div>
+          <div class="metric-value">CLI &amp; App</div>
+          <div class="metric-label">PenTest Hub &amp;<br>iOS Security Scanner</div>
+        </div>
+      </div>
+
+      <div class="quote-glass-box">
+        <div>"I build mobile applications that not only function beautifully, but are hardened against modern security threats."</div>
+        <div class="quote-author">— Ali Nasser (Core Engineering Statement)</div>
+      </div>
+    </div>
+
+    <!-- Projects Section (Exact text from CV) -->
+    <div style="margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center;">
+      <span class="liquid-badge"><i class="fas fa-code-branch"></i> Projects</span>
+      <span style="font-size: 0.85rem; color: var(--text-tertiary); font-weight: 600;">Featured Applications &amp; Security Tools</span>
+    </div>
+
+    <div class="cv-experience-grid">
+      
+      <!-- Project 1: PenTest Hub -->
+      <div class="cv-exp-card">
+        <div>
+          <span class="card-num-badge">01</span>
+          <div class="card-visual-banner" style="background: linear-gradient(135deg, rgba(14, 165, 233, 0.2), rgba(0, 113, 227, 0.25)); color: var(--accent-apple-blue);">
+            <i class="fas fa-terminal"></i>
+          </div>
+          <h3 class="exp-card-title">PenTest Hub</h3>
+          <p class="exp-card-desc">
+            PenTest Hub is a lightweight and modular web vulnerability scanner designed for penetration testers, cybersecurity students, and security researchers. It allows you to quickly scan a target website for common web vulnerabilities and generate detailed HTML and PDF reports.
+          </p>
+        </div>
+        <div class="exp-tags-row">
+          <span class="exp-tag">Python</span>
+          <span class="exp-tag">Web Vulnerability Scanner</span>
+          <span class="exp-tag">HTML &amp; PDF Reports</span>
+          <span class="exp-tag">Automation</span>
+        </div>
+      </div>
+
+      <!-- Project 2: iOS Security Scanner -->
+      <div class="cv-exp-card">
+        <div>
+          <span class="card-num-badge">02</span>
+          <div class="card-visual-banner" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(14, 165, 233, 0.25)); color: #6366f1;">
+            <i class="fab fa-apple"></i>
+          </div>
+          <h3 class="exp-card-title">iOS Security Scanner</h3>
+          <p class="exp-card-desc">
+            iOS Security Scanner is an open-source Swift-based CLI tool that analyzes iOS application packages (.app or .ipa) to detect common security misconfigurations before release.
+          </p>
+        </div>
+        <div class="exp-tags-row">
+          <span class="exp-tag">Swift CLI</span>
+          <span class="exp-tag">.app / .ipa Analysis</span>
+          <span class="exp-tag">Static Security Analysis</span>
+          <span class="exp-tag">Open Source</span>
+        </div>
+      </div>
+
+      <!-- Project 3: Secure Vault -->
+      <div class="cv-exp-card">
+        <div>
+          <span class="card-num-badge">03</span>
+          <div class="card-visual-banner" style="background: linear-gradient(135deg, rgba(0, 113, 227, 0.2), rgba(16, 185, 129, 0.25)); color: #10b981;">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3 class="exp-card-title">Secure Vault</h3>
+          <p class="exp-card-desc">
+            Secure Vault is an iOS application for secure password management, built using SwiftUI, Core Data, and AES-256 encryption.
+          </p>
+        </div>
+        <div class="exp-tags-row">
+          <span class="exp-tag">SwiftUI</span>
+          <span class="exp-tag">Core Data</span>
+          <span class="exp-tag">AES-256</span>
+          <span class="exp-tag">CryptoKit</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 3-Column Matrix: Skills, Education & Languages, Certifications -->
+    <div class="cv-tri-matrix">
+      
+      <!-- Column 1: SKILLS (Exact from CV) -->
+      <div class="matrix-glass-card">
+        <div class="matrix-header">
+          <i class="fas fa-sliders-h"></i> Skills &amp; Proficiencies
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.86rem; font-weight: 600; margin-bottom: 4px;">
+              <span>iOS Development (Swift, SwiftUI, UIKit)</span>
+              <span style="color: var(--accent-apple-blue);">95%</span>
+            </div>
+            <div class="liquid-progress-bar"><div class="liquid-progress-fill" data-width="95%"></div></div>
+          </div>
+
+          <div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.86rem; font-weight: 600; margin-bottom: 4px;">
+              <span>Secure Mobile App Architecture</span>
+              <span style="color: var(--accent-apple-blue);">92%</span>
+            </div>
+            <div class="liquid-progress-bar"><div class="liquid-progress-fill" data-width="92%"></div></div>
+          </div>
+
+          <div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.86rem; font-weight: 600; margin-bottom: 4px;">
+              <span>Core Data &amp; Firebase Integration</span>
+              <span style="color: var(--accent-apple-blue);">90%</span>
+            </div>
+            <div class="liquid-progress-bar"><div class="liquid-progress-fill" data-width="90%"></div></div>
+          </div>
+
+          <div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.86rem; font-weight: 600; margin-bottom: 4px;">
+              <span>Encryption (AES-256, CryptoKit)</span>
+              <span style="color: var(--accent-apple-blue);">94%</span>
+            </div>
+            <div class="liquid-progress-bar"><div class="liquid-progress-fill" data-width="94%"></div></div>
+          </div>
+
+          <div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.86rem; font-weight: 600; margin-bottom: 4px;">
+              <span>Python Scripting &amp; Security Automation</span>
+              <span style="color: var(--accent-apple-blue);">88%</span>
+            </div>
+            <div class="liquid-progress-bar"><div class="liquid-progress-fill" data-width="88%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2: EDUCATION & LANGUAGES (Exact from CV) -->
+      <div class="matrix-glass-card">
+        <div class="matrix-header">
+          <i class="fas fa-graduation-cap"></i> Education &amp; Languages
+        </div>
+
+        <div style="margin-bottom: 22px;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px;">
+            <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary);">University of Babylon</h4>
+            <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-apple-blue); font-weight: 700;">2022 - 2026</span>
+          </div>
+          <div style="font-size: 0.88rem; font-weight: 700; color: var(--accent-apple-blue); margin-bottom: 8px;">
+            Bachelor's Degree in Cybersecurity
+          </div>
+          <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.6;">
+            Currently pursuing a Bachelor's degree in Cybersecurity at the University of Babylon, focusing on network security, ethical hacking, cryptography, and secure software development.
+          </p>
+        </div>
+
+        <div style="border-top: 1px solid var(--glass-border); padding-top: 16px;">
+          <div style="font-size: 0.82rem; font-weight: 700; text-transform: uppercase; color: var(--accent-apple-blue); margin-bottom: 10px;">
+            <i class="fas fa-language"></i> Languages
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.86rem;">
+              <span><strong>Arabic:</strong> Native Proficiency</span>
+              <span class="liquid-chip" style="font-size: 0.72rem; padding: 2px 8px;">Native</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.86rem;">
+              <span><strong>English:</strong> Professional Working</span>
+              <span class="liquid-chip" style="font-size: 0.72rem; padding: 2px 8px;">Professional</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 3: CERTIFICATIONS (Exact from CV) -->
+      <div class="matrix-glass-card">
+        <div class="matrix-header">
+          <i class="fas fa-award"></i> Certifications &amp; Honors
+        </div>
+
+        <div style="margin-bottom: 18px;">
+          <img src="images/gdsc-certificate.png" alt="GDSC Certificate" style="width: 100%; height: 110px; object-fit: cover; border-radius: var(--radius-md); border: 1px solid var(--glass-border); margin-bottom: 14px;">
+
+          <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin-bottom: 4px;">
+            GDSC Lead Certificate of Completion (2023–2024)
+          </h4>
+          <div style="font-size: 0.82rem; font-weight: 700; color: var(--accent-apple-blue); margin-bottom: 8px;">
+            Issued by Google for Developers
+          </div>
+          <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 14px;">
+            Issued by Google for Developers for successfully serving as a Google Developer Student Club Lead during the 2023–2024 academic year.
+          </p>
+
+          <a href="https://www.credential.net/1obas9QFO3YJywkpODBXOfcLTOO7qZCGrWySneR2auKo" target="_blank" rel="noopener noreferrer" class="btn-liquid btn-liquid-primary" style="padding: 6px 14px; font-size: 0.8rem; width: 100%; justify-content: center;">
+            <i class="fas fa-check-circle"></i> Verify Credential
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Contact & Connect Banner (Exact from CV) -->
+    <div class="cv-bottom-banner">
+      <div>
+        <div class="liquid-badge" style="margin-bottom: 12px;"><i class="fas fa-paper-plane"></i> Contact Details</div>
+        <h2 style="font-size: 1.85rem; font-weight: 800; line-height: 1.2; margin-bottom: 12px;">Let's Connect &amp; Collaborate</h2>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+          Feel free to reach out for secure mobile app development projects, application security audits, or engineering roles.
+        </p>
+        <a href="mailto:alinasserkhazali@gmail.com" class="btn-liquid btn-liquid-primary">
+          <i class="fas fa-envelope"></i> Send Email
+        </a>
+      </div>
+
+      <div>
+        <ul class="contact-info-list">
+          <li class="contact-info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Karbala, Iraq 56001</span>
+          </li>
+          <li class="contact-info-item">
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:+9649782975382" style="color: inherit; font-weight: 600;">+964 978 297 5382</a>
+          </li>
+          <li class="contact-info-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:alinasserkhazali@gmail.com" style="color: inherit; font-weight: 600;">alinasserkhazali@gmail.com</a>
+          </li>
+          <li class="contact-info-item">
+            <i class="fas fa-globe"></i>
+            <a href="https://ali-nasser.dev" style="color: inherit; font-weight: 600;">ali-nasser.dev</a>
+          </li>
+        </ul>
+
+        <div style="display: flex; gap: 8px; margin-top: 18px; flex-wrap: wrap;">
+          <a href="https://github.com/a360n" target="_blank" rel="noopener noreferrer" class="liquid-chip">
+            <i class="fab fa-github"></i> github.com/a360n/
+          </a>
+          <a href="https://www.linkedin.com/in/ali-nasser-dev/" target="_blank" rel="noopener noreferrer" class="liquid-chip">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://orcid.org/0009-0007-6179-8991" target="_blank" rel="noopener noreferrer" class="liquid-chip" style="color: #a6ce39; font-weight: 700;">
+            <i class="fab fa-orcid"></i> ORCID
+          </a>
+        </div>
+      </div>
+
+      <div class="qr-card-glass">
+        <div class="qr-code-box">
+          <img src="assets/icons/android-chrome-192x192.png" alt="Ali Nasser Portfolio QR Logo">
+        </div>
+        <div style="font-size: 0.75rem; font-weight: 700; color: var(--text-primary); margin-top: 4px;">ali-nasser.dev</div>
+        <div style="font-size: 0.68rem; color: var(--text-tertiary);">Scan to view online portfolio</div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="liquid-footer">
+    <div class="container">
+      <div>&copy; 2026 Ali Nasser (علي ناصر) • Secure Mobile App Developer &amp; AppSec Specialist</div>
+      <div style="margin-top: 8px; display: flex; justify-content: center; gap: 16px; font-size: 0.85rem;">
+        <a href="index.html">Portfolio Home</a>
+        <span>•</span>
+        <a href="assets/Ali_Nasser_CV.pdf" download>Download PDF CV</a>
+        <span>•</span>
+        <a href="#">Back to Top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="three-scene.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
