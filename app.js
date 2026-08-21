@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initProgressObserver();
   initBibtexModalV4();
   initAppleAudio();
+  initAppleScrollSpy();
 });
 
 /* ==========================================================================
@@ -169,4 +170,122 @@ function initAppleAudio() {
   document.querySelectorAll('.btn-liquid, .quantum-gate-btn, .apple-btn-icon').forEach(el => {
     el.addEventListener('click', playAppleClick);
   });
+}
+
+/* ==========================================================================
+   6. Apple VisionOS HUD ScrollSpy & Smooth Active Navigation
+   ========================================================================== */
+function initAppleScrollSpy() {
+  const navLinks = document.querySelectorAll('.apple-links .apple-link');
+  if (!navLinks.length) return;
+
+  const sectionMap = [];
+  navLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (href && href.startsWith('#')) {
+      const section = document.querySelector(href);
+      if (section) {
+        sectionMap.push({
+          link: link,
+          section: section,
+          id: href
+        });
+      }
+    }
+  });
+
+  if (!sectionMap.length) return;
+
+  function setActive(activeLink) {
+    navLinks.forEach(link => {
+      if (link === activeLink) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  }
+
+  function updateActiveLink() {
+    const scrollY = window.scrollY || window.pageYOffset;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+
+    // Edge case 1: Top of page
+    if (scrollY < 120) {
+      setActive(sectionMap[0].link);
+      return;
+    }
+
+    // Edge case 2: Near bottom of page (highlight Contact)
+    if (scrollY + windowHeight >= documentHeight - 60) {
+      setActive(sectionMap[sectionMap.length - 1].link);
+      return;
+    }
+
+    // Scroll offset check with HUD breathing space
+    const navbarOffset = 220;
+    let currentActive = sectionMap[0].link;
+
+    for (let i = 0; i < sectionMap.length; i++) {
+      const { section, link } = sectionMap[i];
+      const top = section.offsetTop - navbarOffset;
+
+      if (scrollY >= top) {
+        currentActive = link;
+      }
+    }
+
+    setActive(currentActive);
+  }
+
+  // Smooth scroll and immediate active state on click
+  navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          setActive(link);
+          const top = target.offsetTop - 85;
+          window.scrollTo({
+            top: Math.max(0, top),
+            behavior: 'smooth'
+          });
+          if (history.pushState) {
+            history.pushState(null, null, href);
+          }
+        }
+      }
+    });
+  });
+
+  // Handle Apple brand click
+  const brandLink = document.querySelector('.apple-brand[href="#hero-v4"]');
+  if (brandLink) {
+    brandLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      setActive(sectionMap[0].link);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      if (history.pushState) {
+        history.pushState(null, null, '#hero-v4');
+      }
+    });
+  }
+
+  // Throttled scroll listener
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        updateActiveLink();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+
+  window.addEventListener('resize', updateActiveLink);
+  updateActiveLink();
 }

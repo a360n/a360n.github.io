@@ -465,6 +465,7 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 85vh;
   display: flex;
   align-items: center;
+  scroll-margin-top: 100px;
 }
 
 .hero-grid {
@@ -569,6 +570,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .quantum-section {
   padding: 100px 0;
+  scroll-margin-top: 80px;
 }
 
 .quantum-grid {
