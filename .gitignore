@@ -1,2 +1,5 @@
 .DS_Store
 assets/.DS_Store
+snapshot_backup_commit_7ee89fd/
+_backup*/
+*snapshot*/
