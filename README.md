@@ -53,4 +53,4 @@ You are free to use, share, and adapt this project with appropriate attribution.
 **Ali Nasser**  
  alinasserkhazali@gmail.com  
  [GitHub](https://github.com/a360n)  
- [LinkedIn](https://linkedin.com/in/alinasser)
+ [LinkedIn](https://www.linkedin.com/in/ali-nasser-dev/)
