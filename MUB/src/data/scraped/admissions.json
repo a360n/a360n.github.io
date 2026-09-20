@@ -1,0 +1,107 @@
+{
+  "generalConditions": {
+    "ageRequirementEn": "Born in 2002 or later (as mandated for undergraduate study)",
+    "ageRequirementAr": "تولد 2002 فما فوق (وفق تعليمات وضوابط وزارة التعليم العالي والبحث العلمي)",
+    "academicCertificateEn": "Original certified high school diploma / Baccalaureate certificate approved by the Ministry of Education",
+    "academicCertificateAr": "وثيقة تخرج الدراسة الإعدادية الأصلية والمصدقة من المديرية العامة للتربية المعنية"
+  },
+  "applicantCategories": [
+    {
+      "categoryEn": "Iraqi High School Applicants (Baccalaureate Examination)",
+      "categoryAr": "خريجو الدراسة الإعدادية العراقية (الامتحان الوزاري)",
+      "descEn": "Direct qualification through Scientific, Applied, Biological, or Literary secondary education branches according to ministerial thresholds.",
+      "descAr": "القبول المباشر لخريجي الفرع العلمي (التطبيقي / الأحيائي) والفرع الأدبي وفق الحدود الدنيا المعتمدة وزارياً."
+    },
+    {
+      "categoryEn": "International & Arab School Applicants",
+      "categoryAr": "خريجو المدارس الدولية والعربية",
+      "descEn": "Students holding accredited foreign diplomas (IGCSE, American Diploma, IB, etc.) with equivalency certification from the Iraqi Ministry of Education.",
+      "descAr": "الطلبة الحاصلون على شهادات ثانوية دولية أو عربية معادلة ومصدقة من وزارة التربية العراقية."
+    }
+  ],
+  "englishRequirements": {
+    "overviewEn": "As English is the primary medium of instruction for AI and Engineering faculties, students must demonstrate proficiency or complete the intensive academic English preparatory modules.",
+    "overviewAr": "نظراً لأن اللغة الإنجليزية هي لغة التدريس الأساسية في كليات الذكاء الاصطناعي والهندسة، يتعين على الطلبة استيفاء متطلبات الكفاءة اللغوية أو اجتياز البرنامج التأهيلي.",
+    "acceptedCertifications": [
+      {
+        "name": "MUB English Placement Exam (Internal)",
+        "minScore": "Passing Grade"
+      },
+      {
+        "name": "IELTS Academic",
+        "minScore": "5.0 - 5.5"
+      },
+      {
+        "name": "TOEFL iBT",
+        "minScore": "45 - 60"
+      },
+      {
+        "name": "Duolingo English Test (DET)",
+        "minScore": "85 - 95"
+      },
+      {
+        "name": "Cambridge English (B2 First / Linguaskill)",
+        "minScore": "Grade C / 160+"
+      }
+    ]
+  },
+  "admissionsProcedure": [
+    {
+      "step": 1,
+      "titleEn": "Inquiry & Program Selection",
+      "titleAr": "الاستعلام واختيار التخصص",
+      "descEn": "Review available faculties (AI Engineering, Engineering, Law) and verify secondary school percentage eligibility.",
+      "descAr": "الاطلاع على الكليات والأقسام المتاحة والتحقق من مطابقة المعدل لضوابط القبول."
+    },
+    {
+      "step": 2,
+      "titleEn": "Application Submission & Documentation",
+      "titleAr": "تقديم استمارة القبول والمستمسكات",
+      "descEn": "Submit personal details, high school transcript, and national identification via MUB Admissions Office or digital portal.",
+      "descAr": "تعبئة استمارة التقديم وتقديم الوثائق والمستمسكات الثبوتية لقسم التسجيل أو عبر البوابة الإلكترونية."
+    },
+    {
+      "step": 3,
+      "titleEn": "Verification & Placement Interview",
+      "titleAr": "تدقيق الوثائق والمقابلة الإرشادية",
+      "descEn": "Verification of educational records with ministerial guidelines and initial English placement evaluation.",
+      "descAr": "تدقيق صحة صدور الوثائق الدراسية وإجراء اختبار تحديد المستوى باللغة الإنجليزية."
+    },
+    {
+      "step": 4,
+      "titleEn": "Issuance of Admission Acceptance",
+      "titleAr": "إصدار أمر القبول الرسمي",
+      "descEn": "Receipt of official Letter of Admission and notification of scholarship deductions if applicable.",
+      "descAr": "استلام إشعار القبول الرسمي الجامعي متضمناً تفاصيل منحة التفوق إن وجدت."
+    },
+    {
+      "step": 5,
+      "titleEn": "Registration Finalization & Orientation",
+      "titleAr": "تثبيت التسجيل والأسبوع التعريفي",
+      "descEn": "Completion of formal registration in Baghdad campus (Palestine St.), issuance of student ID, and induction.",
+      "descAr": "تثبيت المقعد في مقر الجامعة بشارع فلسطين، استلام الهوية الجامعية، وحضور الأسبوع التعريفي."
+    }
+  ],
+  "requiredDocuments": [
+    {
+      "itemEn": "Original certified High School Graduation Certificate (Baccalaureate) + 3 color copies",
+      "itemAr": "وثيقة تخرج الإعدادية الأصلية والمصدقة من مديرية التربية + 3 نسخ ملونة"
+    },
+    {
+      "itemEn": "Unified National Card or Civil Status ID + Iraqi Nationality Certificate",
+      "itemAr": "البطاقة الوطنية الموحدة أو هوية الأحوال المدنية وشهادة الجنسية العراقية"
+    },
+    {
+      "itemEn": "Official Residence Card (بطاقة السكن)",
+      "itemAr": "بطاقة السكن الأصلية والمصدقة"
+    },
+    {
+      "itemEn": "Approved Medical Examination Certificate (استمارة الفحص الطبي)",
+      "itemAr": "استمارة الفحص الطبي واللياقة البدنية الصادرة من المراكز الصحية المعتمدة"
+    },
+    {
+      "itemEn": "6 recent color passport photographs (white background)",
+      "itemAr": "6 صور شخصية حديثة ملونة بخلفية بيضاء"
+    }
+  ]
+}

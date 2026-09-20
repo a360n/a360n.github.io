@@ -1,0 +1,38 @@
+{
+  "malaysiaPartners": [
+    {
+      "name": "Universiti Teknologi PETRONAS (UTP)",
+      "nameAr": "جامعة التكنولوجيا بتروناس (UTP)",
+      "country": "Malaysia",
+      "focusEn": "Academic collaboration in engineering, digital technologies, research, and joint curriculum development.",
+      "focusAr": "التعاون الأكاديمي في مجالات الهندسة، التقنيات الرقمية، البحث العلمي، وتطوير المناهج المشتركة."
+    },
+    {
+      "name": "Universiti Malaysia Pahang Al-Sultan Abdullah (UMPSA)",
+      "nameAr": "جامعة ماليزيا باهانج السلطان عبد الله (UMPSA)",
+      "country": "Malaysia",
+      "focusEn": "Official Memorandum of Understanding (MoU) for strategic twinning, faculty exchange, student mobility, and credit transfers.",
+      "focusAr": "مذكرة تفاهم رسمية (MoU) للشراكة الاستراتيجية، التبادل الأكاديمي للأساتذة والطلبة، ومعادلة الساعات."
+    }
+  ],
+  "collaborationAreas": [
+    {
+      "titleEn": "Academic Mobility & Student Exchange",
+      "titleAr": "التبادل الطلابي والتنقل الأكاديمي",
+      "descEn": "Opportunities for students to undertake study periods and practical internships at Malaysian partner university campuses.",
+      "descAr": "إتاحة الفرصة للطلبة لقضاء فصول دراسية وتدريب عملي في رحاب الجامعات الماليزية الشريكة."
+    },
+    {
+      "titleEn": "Joint Faculty & Curriculum Benchmarking",
+      "titleAr": "المطابقة الأكاديمية وتبادل الهيئة التدريسية",
+      "descEn": "Course structures continuously harmonized with Malaysian Qualifications Agency standards and international engineering criteria.",
+      "descAr": "تطوير وتحديث المناهج الدراسية باستمرار لتتوافق مع معايير MQA والاعتمادات الهندسية العالمية."
+    },
+    {
+      "titleEn": "Collaborative Scientific Research Initiatives",
+      "titleAr": "المشاريع البحثية المشتركة",
+      "descEn": "Joint research projects addressing real challenges in artificial intelligence, robotics, renewable energy, and legal frameworks.",
+      "descAr": "أبحاث علمية مشتركة لمعالجة التحديات الواقعية في مجالات الذكاء الاصطناعي والروبوتات والطاقة النظيفة."
+    }
+  ]
+}

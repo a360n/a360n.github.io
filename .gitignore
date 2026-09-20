@@ -1,5 +1,33 @@
+# OS files
 .DS_Store
 assets/.DS_Store
+*/.DS_Store
+**/.DS_Store
+
+# Backups & Snapshots
 snapshot_backup_commit_7ee89fd/
 _backup*/
 *snapshot*/
+
+# Node & Next.js
+node_modules/
+**/node_modules/
+.next/
+**/.next/
+out/
+**/out/
+build/
+**/build/
+.vercel
+**/.vercel
+
+# Environment variables
+.env*.local
+.env
+**/.env*.local
+**/.env
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+**/next-env.d.ts

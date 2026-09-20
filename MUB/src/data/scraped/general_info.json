@@ -1,0 +1,75 @@
+{
+  "name": {
+    "en": "Malaysian University of Baghdad",
+    "ar": "الجامعة الماليزية في بغداد",
+    "short": "MUB"
+  },
+  "tagline": {
+    "en": "Leading Digital Transformation in Higher Education",
+    "ar": "رواد التحول الرقمي والتميز الأكاديمي في التعليم العالي"
+  },
+  "description": {
+    "en": "An international academic institution delivering high-quality higher education in AI, Engineering, and Law based on Malaysian and international academic standards.",
+    "ar": "مؤسسة أكاديمية دولية رائدة تقدم تعليماً جامعياً عالي الجودة في مجالات الذكاء الاصطناعي والهندسة والقانون بالاعتماد على معايير الجودة الماليزية والدولية."
+  },
+  "address": {
+    "street": "Palestine Street, 14th of July District, Section 508, Street 11, Building No. 105",
+    "streetAr": "شارع فلسطين، محلة 14 تموز، مقاطعة 508، زقاق 11، بناية 105",
+    "city": "Baghdad",
+    "cityAr": "بغداد",
+    "country": "Iraq",
+    "countryAr": "العراق",
+    "postalCode": "10069"
+  },
+  "contact": {
+    "phone": "+964-776-080-0707",
+    "email": "info@mub.edu.iq",
+    "website": "https://mub.edu.iq",
+    "workingHours": {
+      "en": "Saturday – Thursday: 8:30 AM – 4:30 PM",
+      "ar": "السبت – الخميس: 8:30 صباحاً – 4:30 مساءً"
+    }
+  },
+  "accreditation": {
+    "iraq": {
+      "body": "Ministry of Higher Education and Scientific Research (MoHESR)",
+      "bodyAr": "وزارة التعليم العالي والبحث العلمي العراقية",
+      "status": "Accredited and officially licensed"
+    },
+    "malaysia": {
+      "body": "Malaysian Qualifications Agency (MQA) Benchmark",
+      "bodyAr": "معايير وكالة المؤهلات الماليزية (MQA)",
+      "status": "Aligned curriculum and quality frameworks"
+    },
+    "international": {
+      "framework": "Washington Accord aligned engineering curricula",
+      "frameworkAr": "مطابقة مناهج الهندسة لاتفاقية واشنطن للاعتراف الدولي"
+    }
+  },
+  "pillars": [
+    {
+      "titleEn": "Medium of Instruction: English",
+      "titleAr": "لغة التدريس: الإنجليزية",
+      "descEn": "Delivering modern international education with English-medium instruction in AI and Engineering, preparing students for regional and global industries.",
+      "descAr": "تعليم جامعي معاصر باللغة الإنجليزية في تخصصات التكنولوجيا والهندسة لإعداد خريجين مؤهلين لسوق العمل الإقليمي والدولي."
+    },
+    {
+      "titleEn": "Academic Quality & International Standards",
+      "titleAr": "الجودة الأكاديمية والمعايير الدولية",
+      "descEn": "Rigorous curriculum frameworks directly co-developed and benchmarked against leading Malaysian technical universities.",
+      "descAr": "أطر ومناهج دراسية رصينة طُوّرت بالشراكة وبالمطابقة مع كبرى الجامعات التقنية الماليزية."
+    },
+    {
+      "titleEn": "Experiential Laboratory Learning",
+      "titleAr": "التعليم المخبري والتطبيقي المباشر",
+      "descEn": "Cutting-edge computing clusters, robotics hangars, and simulation courtrooms for immersive practical training.",
+      "descAr": "مختبرات حوسبة متقدمة وحظائر روبوتات ومحكمة صورية رقمية لتمكين الطلبة من التطبيق العملي المباشر."
+    },
+    {
+      "titleEn": "Strategic Twinning & Exchange Pathways",
+      "titleAr": "مسارات التوأمة والتبادل الأكاديمي",
+      "descEn": "MoUs with premier institutions like UTP and UMPSA providing pathways for student mobility and collaborative research.",
+      "descAr": "مذكرات تفاهم وشراكات مع جامعات ماليزية رائدة (مثل UTP و UMPSA) تتيح التبادل الأكاديمي والبحث المشترك."
+    }
+  ]
+}

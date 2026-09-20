@@ -1,0 +1,189 @@
+[
+  {
+    "id": "college-ai",
+    "nameEn": "College of Artificial Intelligence Engineering",
+    "nameAr": "كلية هندسة الذكاء الاصطناعي",
+    "overviewEn": "The College of Artificial Intelligence Engineering prepares students to become leaders in AI algorithms, data analytics, autonomous robotics, and AI system security through comprehensive theoretical foundations and immersive laboratory training.",
+    "overviewAr": "تعد كلية هندسة الذكاء الاصطناعي قادة المستقبل في خوارزميات الذكاء الاصطناعي وتحليلات البيانات والروبوتات المستقلة وأمن الأنظمة الذكية من خلال تدريب مخبري فائق التطور.",
+    "departments": [
+      {
+        "id": "ai-ml",
+        "nameEn": "Artificial Intelligence and Machine Learning",
+        "nameAr": "الذكاء الاصطناعي وتعلّم الآلة",
+        "descEn": "Covers deep neural networks, computer vision, natural language processing, reinforcement learning, and autonomous decision systems.",
+        "descAr": "يركز على الشبكات العصبية العميقة، الرؤية الحاسوبية، معالجة اللغات الطبيعية، والتعلّم التعزيزي وأنظمة اتخاذ القرار المستقلة."
+      },
+      {
+        "id": "data-science",
+        "nameEn": "Data Science and Big Data Analytics",
+        "nameAr": "علوم البيانات وتحليلات البيانات الضخمة",
+        "descEn": "Focuses on enterprise data pipelines, statistical modeling, distributed systems, predictive analytics, and executive business intelligence.",
+        "descAr": "يهتم ببناء أنابيب البيانات الضخمة، النمذجة الإحصائية، الأنظمة الموزعة، والتحليلات التنبؤية لدعم القرار المؤسسي."
+      },
+      {
+        "id": "robotics-intelligent-systems",
+        "nameEn": "Robotics and Intelligent Systems",
+        "nameAr": "الروبوتات والأنظمة الذكية",
+        "descEn": "Design and development of autonomous robots, intelligent automation systems, and human-robot interaction technologies.",
+        "descAr": "تصميم وتطوير الروبوتات ذاتية القيادة وأنظمة الأتمتة الذكية وتقنيات التفاعل بين الإنسان والآلة."
+      },
+      {
+        "id": "ai-security",
+        "nameEn": "AI Security and Intelligent Systems Safety",
+        "nameAr": "أمن الذكاء الاصطناعي وسلامة الأنظمة الذكية",
+        "descEn": "Specializes in adversarial machine learning defense, model robustness, algorithmic privacy, and cyber protection for smart infrastructures.",
+        "descAr": "يختص بحماية نماذج تعلّم الآلة من الهجمات السيبرانية وموثوقية الخوارزميات وأمن البنى التحتية الحيوية الذكية."
+      }
+    ],
+    "laboratories": [
+      {
+        "nameEn": "Intelligent Systems and Machine Learning Laboratory",
+        "nameAr": "مختبر الأنظمة الذكية وتعلّم الآلة",
+        "descEn": "High-performance workstations configured for training supervised, unsupervised, and reinforcement learning models.",
+        "descAr": "محطات عمل فائقة الأداء لتدريب وتطوير نماذج التعلّم الخاضع للإشراف والتعلّم المعزز."
+      },
+      {
+        "nameEn": "Deep Learning and Computer Vision Laboratory",
+        "nameAr": "مختبر التعلّم العميق والرؤية الحاسوبية",
+        "descEn": "Dedicated GPU computing resources for object detection, neural rendering, facial analytics, and autonomous visual perception.",
+        "descAr": "موارد حوسبة رسومية مخصصة للتعرف على الأجسام، الرؤية المكانية، وتطبيقات الاستشعار البصري المستقل."
+      },
+      {
+        "nameEn": "Natural Language Processing and Generative AI Laboratory",
+        "nameAr": "مختبر معالجة اللغات الطبيعية والذكاء الاصطناعي التوليدي",
+        "descEn": "Advanced cluster for large language model (LLM) fine-tuning, speech synthesis, and Arabic dialect NLP development.",
+        "descAr": "بيئة بحثية متقدمة لتدريب النماذج اللغوية الكبيرة وتحليل النصوص وتطوير معالجة اللهجات العربية."
+      },
+      {
+        "nameEn": "Data Engineering and Big Data Analytics Laboratory",
+        "nameAr": "مختبر هندسة البيانات وتحليلات البيانات الضخمة",
+        "descEn": "Distributed computing framework testbeds for big data streaming, ETL workloads, and cloud database architecture.",
+        "descAr": "منصات حوسبة موزعة لمعالجة تدفقات البيانات الضخمة وبناء قواعد البيانات السحابية العملاقة."
+      },
+      {
+        "nameEn": "Artificial Intelligence Engineering and Deployment Laboratory",
+        "nameAr": "مختبر هندسة ونشر أنظمة الذكاء الاصطناعي",
+        "descEn": "Focused on MLOps, containerized microservices, edge AI devices, and industrial deployment pipelines.",
+        "descAr": "مخصص لعمليات MLOps، الحاويات البرمجية، تشغيل الذكاء الاصطناعي على الحواف الطرفية، والنشر الصناعي."
+      }
+    ],
+    "careerOutcomes": [
+      "Artificial Intelligence Engineer",
+      "Machine Learning Engineer",
+      "AI Systems Developer",
+      "Computer Vision Engineer",
+      "Natural Language Processing Engineer",
+      "Intelligent Systems Architect",
+      "Big Data Infrastructure Architect"
+    ]
+  },
+  {
+    "id": "college-engineering",
+    "nameEn": "College of Engineering",
+    "nameAr": "كلية الهندسة",
+    "overviewEn": "The College of Engineering delivers Washington Accord benchmarked programs in Mechatronics, Computer Engineering, and Sustainable Energy, emphasizing hands-on experimental laboratories and digital systems design.",
+    "overviewAr": "تقدم كلية الهندسة برامج مطابقة لمعايير اتفاقية واشنطن في الميكاترونكس وهندسة الحاسوب والطاقة المستدامة مع تركيز مكثف على التطبيق المخبري.",
+    "departments": [
+      {
+        "id": "mechatronics",
+        "nameEn": "Mechatronics and Robotics Engineering",
+        "nameAr": "هندسة الميكاترونكس والروبوتات",
+        "descEn": "Design autonomous robots, intelligent systems, industrial automation, and smart manufacturing production lines (Industry 4.0).",
+        "descAr": "تصميم الروبوتات المستقلة والأنظمة الذكية وأتمتة العمليات الصناعية وخطوط الإنتاج المتقدمة (الثورة الصناعية الرابعة)."
+      },
+      {
+        "id": "computer-eng",
+        "nameEn": "Computer Engineering",
+        "nameAr": "هندسة الحاسوب",
+        "descEn": "Develop advanced hardware microarchitectures, embedded systems, FPGA digital logic, and enterprise networking infrastructures.",
+        "descAr": "تطوير المعماريات الدقيقة للعتاد، الأنظمة المدمجة، المنطق الرقمي المبرمج FPGA، وشبكات الحاسوب المؤسسية."
+      },
+      {
+        "id": "sustainable-energy",
+        "nameEn": "Sustainable Energy Technology Engineering",
+        "nameAr": "هندسة تكنولوجيا الطاقة المستدامة",
+        "descEn": "Innovate smart electrical grids, solar photovoltaic power generation, energy storage systems, and clean technology solutions.",
+        "descAr": "ابتكار الشبكات الكهربائية الذكية، محطات الطاقة الشمسية، منظومات تخزين الطاقة، وحلول التكنولوجيا الخضراء النظيفة."
+      }
+    ],
+    "laboratories": [
+      {
+        "nameEn": "Robotics and Autonomous Systems Laboratories",
+        "nameAr": "مختبرات الروبوتات والأنظمة المستقلة",
+        "descEn": "Multi-axis industrial robotic arms, mobile AGVs, and kinematic telemetry rigs.",
+        "descAr": "أذرع روبوتية صناعية متعددة المحاور ومركبات ذاتية التوجيه وأجهزة تحليل الحركة."
+      },
+      {
+        "nameEn": "Embedded Systems and IoT Laboratories",
+        "nameAr": "مختبرات الأنظمة المدمجة وإنترنت الأشياء",
+        "descEn": "Microcontroller prototyping kits, real-time operating systems, and wireless sensor nodes.",
+        "descAr": "حقائب تطوير المعالجات الدقيقة وأنظمة التشغيل اللحظية ومجسات الاستشعار اللاسلكية."
+      },
+      {
+        "nameEn": "Industrial Automation and Smart Manufacturing Laboratories",
+        "nameAr": "مختبرات الأتمتة الصناعية والتصنيع الذكي",
+        "descEn": "PLC automation racks, pneumatic and hydraulic test stands, and SCADA industrial monitors.",
+        "descAr": "منصات أتمتة PLC واختبارات الأنظمة الهيدروليكية والهوائية وشاشات التحكم الصناعي SCADA."
+      },
+      {
+        "nameEn": "Computer Engineering and Digital Systems Laboratories",
+        "nameAr": "مختبرات هندسة الحاسوب والأنظمة الرقمية",
+        "descEn": "FPGA synthesis boards, logic analyzers, and high-frequency circuit prototyping stations.",
+        "descAr": "لوحات برمجة FPGA وأجهزة تحليل المنطق الرقمي ومحطات اختبار الدوائر عالية التردد."
+      },
+      {
+        "nameEn": "Renewable Energy Systems & Smart Grid Lab",
+        "nameAr": "مختبر منظومات الطاقة المتجددة والشبكات الذكية",
+        "descEn": "Photovoltaic test arrays, smart inverters, lithium battery test units, and microgrid telemetry.",
+        "descAr": "محطات اختبار الطاقة الشمسية الكهروضوئية، العواكس الذكية، ومنظومات موازنة الشبكات المصغرة."
+      }
+    ],
+    "careerOutcomes": [
+      "Robotics & Autonomous Systems Engineer",
+      "Mechatronics Automation Specialist",
+      "Embedded Systems & Firmware Developer",
+      "Computer Hardware & Network Engineer",
+      "Smart Grid & Renewable Energy Project Lead",
+      "Industrial Automation & SCADA Control Engineer"
+    ]
+  },
+  {
+    "id": "college-law",
+    "nameEn": "College of Law",
+    "nameAr": "كلية القانون",
+    "overviewEn": "The College of Law delivers comprehensive civil and commercial legal education integrated with pioneering specializations in cyber law, AI regulation, digital governance, and international trade law.",
+    "overviewAr": "تقدم كلية القانون تعليماً حقوقياً متكاملاً في القوانين المدنية والتجارية مع تخصصات رائدة في القانون السيبراني وتنظيم الذكاء الاصطناعي والحوكمة الرقمية.",
+    "departments": [
+      {
+        "id": "cyber-digital-law",
+        "nameEn": "Cyber Law, AI Regulation & Digital Governance",
+        "nameAr": "القانون السيبراني وتنظيم الذكاء الاصطناعي والحوكمة الرقمية",
+        "descEn": "Specializes in computer crime prosecution, digital forensics evidence, algorithmic accountability, data protection (GDPR frameworks), and fintech regulations.",
+        "descAr": "يختص بالتحقيق في الجرائم المعلوماتية، الأدلة الجنائية الرقمية، المسؤولية القانونية للخوارزميات، وحماية البيانات الشخصية وتشريعات الفنتك."
+      },
+      {
+        "id": "intl-commercial-law",
+        "nameEn": "International Commercial Law & Arbitration",
+        "nameAr": "القانون التجاري الدولي والتحكيم",
+        "descEn": "Focuses on cross-border business transactions, foreign direct investment, oil and gas contracts, and international commercial dispute resolution.",
+        "descAr": "يركز على الصفقات التجارية العابرة للحدود، عقود الاستثمار الأجنبي المباشر، عقود النفط والغاز، والتحكيم التجاري الدولي."
+      }
+    ],
+    "laboratories": [
+      {
+        "nameEn": "Digital Moot Court & Forensic Hearing Chamber",
+        "nameAr": "المحكمة الصورية الرقمية وقاعة الأدلة الجنائية",
+        "descEn": "A judicial courtroom equipped with digital evidence screens, bilingual interpretation, and simulated cyber litigation facilities.",
+        "descAr": "قاعة محكمة مجهزة بشاشات عرض الأدلة الرقمية ونظام ترجمة فورية لمحاكاة المحاكمات في النزاعات المعاصرة."
+      }
+    ],
+    "careerOutcomes": [
+      "Legal Practice and Advocacy Attorney",
+      "Corporate and Commercial Legal Counsel",
+      "Cyber Law & Digital Forensics Legal Consultant",
+      "Data Protection & Privacy Compliance Officer",
+      "Government Legal Advisor & Public Policy Specialist",
+      "International Commercial Arbitration Practitioner"
+    ]
+  }
+]
